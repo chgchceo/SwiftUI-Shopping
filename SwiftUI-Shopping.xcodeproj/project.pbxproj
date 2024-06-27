@@ -15,6 +15,7 @@
 		14C5805E2C2D405A0012993F /* SwiftUI_Shopping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14C5805C2C2D405A0012993F /* SwiftUI_Shopping.xcdatamodeld */; };
 		14C580762C2D43CE0012993F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580752C2D43CE0012993F /* HomeViewController.swift */; };
 		14C580782C2D4B780012993F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580772C2D4B780012993F /* HomeView.swift */; };
+		14C5807A2C2D69F40012993F /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580792C2D69F40012993F /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		14C5805D2C2D405A0012993F /* SwiftUI_Shopping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUI_Shopping.xcdatamodel; sourceTree = "<group>"; };
 		14C580752C2D43CE0012993F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		14C580772C2D4B780012993F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		14C580792C2D69F40012993F /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		14C5806A2C2D43AA0012993F /* Ctrl */ = {
 			isa = PBXGroup;
 			children = (
+				14C580792C2D69F40012993F /* CategoryView.swift */,
 			);
 			path = Ctrl;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C580762C2D43CE0012993F /* HomeViewController.swift in Sources */,
+				14C5807A2C2D69F40012993F /* CategoryView.swift in Sources */,
 				14C5805B2C2D405A0012993F /* Persistence.swift in Sources */,
 				14C580542C2D40580012993F /* ContentView.swift in Sources */,
 				14C580782C2D4B780012993F /* HomeView.swift in Sources */,

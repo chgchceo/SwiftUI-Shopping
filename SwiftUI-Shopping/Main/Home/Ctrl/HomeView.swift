@@ -14,18 +14,32 @@ struct HomeView: View {
             
             //背景颜色
             Rectangle()
-                .foregroundColor(.white)
+                .foregroundColor(.gray)
                 .cornerRadius(20)
             VStack{
                 
                 Text("hello world")
                 
-                .navigationTitle("首页")
+                //                .navigationTitle("首页")
+                    .navigationBarTitle("首页", displayMode: .inline)
+                
+                
+//                    .toolbar(content: {
+//                        
+//                        NavigationLink(destination: 
+//                            
+//                        HomeView()
+//                        
+//                        ) {
+//                            
+//                            Text("搜索")
+//                            
+//                        }
+//                    })
             }
-            
         }
         .padding()
-        .background(.gray)
+        .background(.white)
     }
 }
 
