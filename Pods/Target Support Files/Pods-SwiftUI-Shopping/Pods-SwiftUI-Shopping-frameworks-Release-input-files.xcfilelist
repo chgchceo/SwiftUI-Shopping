@@ -1,0 +1,16 @@
+${PODS_ROOT}/Target Support Files/Pods-SwiftUI-Shopping/Pods-SwiftUI-Shopping-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CountdownLabel/CountdownLabel.framework
+${BUILT_PRODUCTS_DIR}/EAIntroView/EAIntroView.framework
+${BUILT_PRODUCTS_DIR}/EARestrictedScrollView/EARestrictedScrollView.framework
+${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework
+${BUILT_PRODUCTS_DIR}/Instructions/Instructions.framework
+${BUILT_PRODUCTS_DIR}/JXBanner/JXBanner.framework
+${BUILT_PRODUCTS_DIR}/JXPageControl/JXPageControl.framework
+${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
+${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework
+${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
+${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework
+${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework

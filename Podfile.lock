@@ -1,0 +1,105 @@
+PODS:
+  - Alamofire (5.9.1)
+  - CountdownLabel (4.0.1)
+  - EAIntroView (2.13.0):
+    - EARestrictedScrollView (~> 1.1.0)
+  - EARestrictedScrollView (1.1.0)
+  - HandyJSON (5.0.2)
+  - Instructions (2.3.0)
+  - JXBanner (0.3.6):
+    - JXBanner/Banner (= 0.3.6)
+    - JXBanner/PageControl (= 0.3.6)
+  - JXBanner/Banner (0.3.6):
+    - JXBanner/Banner/API (= 0.3.6)
+    - JXBanner/Banner/Banner (= 0.3.6)
+    - JXBanner/Banner/Cell (= 0.3.6)
+    - JXBanner/Banner/Common (= 0.3.6)
+    - JXBanner/Banner/Transform (= 0.3.6)
+  - JXBanner/Banner/API (0.3.6):
+    - JXBanner/Banner/Cell
+    - JXBanner/PageControl
+  - JXBanner/Banner/Banner (0.3.6):
+    - JXBanner/Banner/API
+    - JXBanner/Banner/Common
+    - JXBanner/Banner/Transform
+  - JXBanner/Banner/Cell (0.3.6)
+  - JXBanner/Banner/Common (0.3.6)
+  - JXBanner/Banner/Transform (0.3.6):
+    - JXBanner/Banner/API
+  - JXBanner/PageControl (0.3.6):
+    - JXPageControl
+  - JXPageControl (0.1.5):
+    - JXPageControl/Common (= 0.1.5)
+    - JXPageControl/Jump (= 0.1.5)
+    - JXPageControl/Transform (= 0.1.5)
+  - JXPageControl/Common (0.1.5)
+  - JXPageControl/Jump (0.1.5):
+    - JXPageControl/Common
+  - JXPageControl/Transform (0.1.5):
+    - JXPageControl/Common
+  - MJRefresh (3.7.9)
+  - SCLAlertView (0.8)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.19.2):
+    - SDWebImage/Core (= 5.19.2)
+  - SDWebImage/Core (5.19.2)
+  - SwiftMessages (9.0.9):
+    - SwiftMessages/App (= 9.0.9)
+  - SwiftMessages/App (9.0.9)
+  - SwiftyUserDefaults (5.3.0)
+  - Toast-Swift (5.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - CountdownLabel
+  - EAIntroView
+  - HandyJSON
+  - Instructions
+  - JXBanner
+  - MJRefresh
+  - SCLAlertView
+  - SDCycleScrollView
+  - SDWebImage
+  - SwiftMessages
+  - SwiftyUserDefaults
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CountdownLabel
+    - EAIntroView
+    - EARestrictedScrollView
+    - HandyJSON
+    - Instructions
+    - JXBanner
+    - JXPageControl
+    - MJRefresh
+    - SCLAlertView
+    - SDCycleScrollView
+    - SDWebImage
+    - SwiftMessages
+    - SwiftyUserDefaults
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  CountdownLabel: c9975e3f329140b5e7d1f45cd63b1300badd1712
+  EAIntroView: 9adedfc6b5c3fd3ebe19766da01dae573e6ce053
+  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Instructions: 3aac22d036495ba4c40e00747e0a275da40ce53d
+  JXBanner: 348dbef856e786494cbf30fb45d6b84826f2d3c5
+  JXPageControl: e9487b39e2e58fc17790833214f3b8e935bef98b
+  MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
+  SwiftMessages: 1a23aef303fa7bb26ad802880746cf8358e378fe
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+  Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
+
+PODFILE CHECKSUM: d3fc52ff17e085e587838c704c070fe1b169bbc6
+
+COCOAPODS: 1.15.2

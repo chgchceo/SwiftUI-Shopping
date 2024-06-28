@@ -1,0 +1,6 @@
+framework module Pods_SwiftUI_Shopping {
+  umbrella header "Pods-SwiftUI-Shopping-umbrella.h"
+
+  export *
+  module * { export * }
+}
