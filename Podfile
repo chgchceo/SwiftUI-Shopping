@@ -3,7 +3,7 @@ target 'SwiftUI-Shopping' do
   use_frameworks!
   pod 'Alamofire'
   pod 'HandyJSON'
-  pod 'SDWebImageSwiftUI'
+  pod 'SDWebImage'
   pod 'JXBanner'
   pod 'SwiftyUserDefaults'
   pod 'Instructions'
@@ -13,7 +13,7 @@ target 'SwiftUI-Shopping' do
   pod 'SDCycleScrollView'
   pod 'EAIntroView'
   pod 'Toast-Swift'
-
+  pod 'SDWebImageSwiftUI'
 
   pod 'MJRefresh'
 
