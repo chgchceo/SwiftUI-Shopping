@@ -30,9 +30,9 @@ struct ExampleView: View {
                 UIKitTabView.Tab(view: NavView(), title: "首页", image: "phone32.png"),
                 
                 
-                    
-                UIKitTabView.Tab(view: HomeView(), title: "其他", image: "")
-                
+//
+//                UIKitTabView.Tab(view: HomeView(is), title: "其他", image: "")
+//
                 
             ])
             .navigationBarTitle("其它", displayMode: .inline)

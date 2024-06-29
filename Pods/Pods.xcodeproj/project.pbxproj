@@ -1044,7 +1044,7 @@
 		8A8C11576F1986722C29A97F753BEC5B /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/Core/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		8AC186979FAFB5D95CCEB2617A8411B8 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/Core/UIImage+GIF.h"; sourceTree = "<group>"; };
 		8B6CF5C20C32EE9F7F0862FF892524DE /* SDCycleScrollView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDCycleScrollView; path = SDCycleScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CountdownLabel; path = CountdownLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CountdownLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBD59B9F5402CE4101763C477920531 /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
 		8E039B7F242E310DE3C9FBAF7F175573 /* SDWebImageOptionsProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageOptionsProcessor.m; path = SDWebImage/Core/SDWebImageOptionsProcessor.m; sourceTree = "<group>"; };
 		8EE4511AE4F8CA02FAE519DA8A22FE1E /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
@@ -1079,7 +1079,7 @@
 		9CC75BCAAEEFC2F7BADAD30AB81279C1 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Logger.swift; sourceTree = "<group>"; };
 		9CFD206D77F151AAA929D330C9F4346E /* NSButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSButton+WebCache.h"; path = "SDWebImage/Core/NSButton+WebCache.h"; sourceTree = "<group>"; };
 		9D2EDCD687383FEB6CA7721DE403F5DD /* CoachMarkArrowOrientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoachMarkArrowOrientation.swift; path = Sources/Instructions/Helpers/Public/Enums/CoachMarkArrowOrientation.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DBD0295AE56D1D26BB562C778B3AD53 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Source/DateFormatterTransform.swift; sourceTree = "<group>"; };
 		9F1DD69BFE085B3F061CE40D8CCC3691 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/Core/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		9F2AFF11DA8FEDD31F09EA801F04EF6C /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
@@ -1233,7 +1233,7 @@
 		D9307EA4C48ABF3948C5BC324D026523 /* LoadingState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingState.swift; path = Sources/URLImage/ImageLoader/Downloader/LoadingState.swift; sourceTree = "<group>"; };
 		D939D17233D2C9136501BC820C8E2F7F /* SDImageCachesManagerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManagerOperation.h; path = SDWebImage/Private/SDImageCachesManagerOperation.h; sourceTree = "<group>"; };
 		D9BFEF3976D9A82D23359F7108045095 /* infoIconSubtle@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIconSubtle@2x.png"; path = "SwiftMessages/Resources/infoIconSubtle@2x.png"; sourceTree = "<group>"; };
-		DA0C3E42A01E4D25E4BBDE93A16526F6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Toast/Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DA0C3E42A01E4D25E4BBDE93A16526F6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Toast/Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DACC56091E858AA3650C24364DCB1034 /* SDImageIOAnimatedCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOAnimatedCoderInternal.h; path = SDWebImage/Private/SDImageIOAnimatedCoderInternal.h; sourceTree = "<group>"; };
 		DC5C47A516A4E2B52055BD4D3B5CF6F8 /* HandyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HandyJSON.modulemap; sourceTree = "<group>"; };
 		DC96364BDFD797899AABE8E02AADFE6E /* errorIconSubtle@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIconSubtle@3x.png"; path = "SwiftMessages/Resources/errorIconSubtle@3x.png"; sourceTree = "<group>"; };
@@ -1551,7 +1551,6 @@
 				651012C0361D4FBB02D177077C0A6135 /* EAIntroView.m */,
 				8DBBDCAA914DEB24D52332EEA556CDEC /* Support Files */,
 			);
-			name = EAIntroView;
 			path = EAIntroView;
 			sourceTree = "<group>";
 		};
@@ -1619,7 +1618,6 @@
 				5E3EE1491B618E25AC9F2208C8B47613 /* URLTransform.swift */,
 				4956550BA6D2ED3BA248C6A32CBFD40F /* Support Files */,
 			);
-			name = HandyJSON;
 			path = HandyJSON;
 			sourceTree = "<group>";
 		};
@@ -1640,7 +1638,6 @@
 				AFA084A13C1CA1C22F986B16D128FC47 /* Resources */,
 				B4D6C39E8C6DE8A845992439857ABF57 /* Support Files */,
 			);
-			name = "Toast-Swift";
 			path = "Toast-Swift";
 			sourceTree = "<group>";
 		};
@@ -1697,7 +1694,6 @@
 				0A19750F6BDA4E90FDE5D950516CB3D2 /* PullToRefresh.swift */,
 				07C70EDC3028877FBF9B23534CD802EB /* Support Files */,
 			);
-			name = SwiftUIRefresh;
 			path = SwiftUIRefresh;
 			sourceTree = "<group>";
 		};
@@ -1708,7 +1704,6 @@
 				7C7407E047F457A60E309FFAB527B291 /* PageControl */,
 				3B13B9F0145CDCDF3056341E2617506E /* Support Files */,
 			);
-			name = JXBanner;
 			path = JXBanner;
 			sourceTree = "<group>";
 		};
@@ -1752,7 +1747,6 @@
 				8F8975236C0C0AED9F0F657DD4772D4F /* Validation.swift */,
 				7DEAE352FD1D63C5914896D723D91CEF /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1825,7 +1819,6 @@
 				472BA2607339CB2AE665A9BF5974247F /* ViewControllerConfiguration.swift */,
 				9AF6A7C783783C5D70FE8F89827C1815 /* Support Files */,
 			);
-			name = Instructions;
 			path = Instructions;
 			sourceTree = "<group>";
 		};
@@ -1833,7 +1826,7 @@
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel */,
+				8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel.framework */,
 				F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView */,
 				9F993663B3367094F9B371817504B205 /* EARestrictedScrollView */,
 				CD54121DDA84872534168702B5F92950 /* HandyJSON */,
@@ -1933,7 +1926,6 @@
 				7221AA70E53565612B27461D9B49B943 /* PropertyWrappers.swift */,
 				CCC159318153F389B02D09C95CDAE786 /* Support Files */,
 			);
-			name = SwiftyUserDefaults;
 			path = SwiftyUserDefaults;
 			sourceTree = "<group>";
 		};
@@ -1944,7 +1936,6 @@
 				75316D9D0999166717E3486B8EE798FD /* EARestrictedScrollView.m */,
 				8847F69921C38FD01F37F1FCBC1944DF /* Support Files */,
 			);
-			name = EARestrictedScrollView;
 			path = EARestrictedScrollView;
 			sourceTree = "<group>";
 		};
@@ -1954,7 +1945,6 @@
 				A0BE4C48F008CB3A79EFFFE97B9E318F /* Core */,
 				0C24BD2BE050856FDC769B04D4228F78 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1992,7 +1982,6 @@
 				30DABBD5A9A621DC649C5660EB749063 /* SCLExtensions.swift */,
 				FF4CDD292FECEA3F3F41E9384129A7AB /* Support Files */,
 			);
-			name = SCLAlertView;
 			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
@@ -2032,7 +2021,6 @@
 				9C6F3B5457977F6406A69DF8047903A0 /* App */,
 				9DB9293E8D12091282D21DF4D6014C8D /* Support Files */,
 			);
-			name = SwiftMessages;
 			path = SwiftMessages;
 			sourceTree = "<group>";
 		};
@@ -2391,7 +2379,6 @@
 				07CC0F2D664BAAF822326CCBBD7A7752 /* ViewExtensions.swift */,
 				E23D9325BFDA0F66B077EB3E966B2865 /* Support Files */,
 			);
-			name = Introspect;
 			path = Introspect;
 			sourceTree = "<group>";
 		};
@@ -2429,7 +2416,6 @@
 				754F67CB69F4823D9A9B257E60878F81 /* LTStringDiffResult.swift */,
 				34F13321BAFD7ED9240E12F41A66A74F /* Support Files */,
 			);
-			name = CountdownLabel;
 			path = CountdownLabel;
 			sourceTree = "<group>";
 		};
@@ -2477,7 +2463,6 @@
 				6BFFFCE84EBB0CD3818F0A1E14B76D00 /* Version.swift */,
 				70AC9658D0F44D7DE1FFEC4ED8C4F787 /* Support Files */,
 			);
-			name = URLImage;
 			path = URLImage;
 			sourceTree = "<group>";
 		};
@@ -2537,7 +2522,6 @@
 				8010F73CDD404954B810D600B5EDAE90 /* UIView+SDExtension.m */,
 				9F7E62D82BBAB4695E3654A1FDBB21C5 /* Support Files */,
 			);
-			name = SDCycleScrollView;
 			path = SDCycleScrollView;
 			sourceTree = "<group>";
 		};
@@ -2549,7 +2533,6 @@
 				03F5AFAB827D6808D9770C0CCD96ECE3 /* Support Files */,
 				A33F91767DC73CD032E61893D5918903 /* Transform */,
 			);
-			name = JXPageControl;
 			path = JXPageControl;
 			sourceTree = "<group>";
 		};
@@ -2830,7 +2813,7 @@
 			);
 			name = CountdownLabel;
 			productName = CountdownLabel;
-			productReference = 8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel */;
+			productReference = 8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		10D88C24864319FF583AD6D156896F32 /* HandyJSON */ = {
@@ -4296,7 +4279,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4658,7 +4641,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -32,6 +32,9 @@
 		14C580782C2D4B780012993F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580772C2D4B780012993F /* HomeView.swift */; };
 		14C5807A2C2D69F40012993F /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580792C2D69F40012993F /* CategoryView.swift */; };
 		8BA7994F2C2F9F87005EB744 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA7994E2C2F9F87005EB744 /* Launch Screen.storyboard */; };
+		8BB44A5C2C2FF6DA00B164AC /* GoodsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB44A5B2C2FF6DA00B164AC /* GoodsListView.swift */; };
+		8BB44A5E2C2FF91C00B164AC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB44A5D2C2FF91C00B164AC /* LoadingView.swift */; };
+		8BB44A602C3004F300B164AC /* GoodsDetailPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB44A5F2C3004F300B164AC /* GoodsDetailPageView.swift */; };
 		BA93BAF65DE712EBA11F07AA /* Pods_SwiftUI_Shopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3272F989A8CE65B95A71D6 /* Pods_SwiftUI_Shopping.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,9 @@
 		14C580792C2D69F40012993F /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		5363C27FA16B4439342B848A /* Pods-SwiftUI-Shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Shopping.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Shopping/Pods-SwiftUI-Shopping.debug.xcconfig"; sourceTree = "<group>"; };
 		8BA7994E2C2F9F87005EB744 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8BB44A5B2C2FF6DA00B164AC /* GoodsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoodsListView.swift; path = "SwiftUI-Shopping/GoodsListView.swift"; sourceTree = SOURCE_ROOT; };
+		8BB44A5D2C2FF91C00B164AC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = "SwiftUI-Shopping/LoadingView.swift"; sourceTree = SOURCE_ROOT; };
+		8BB44A5F2C3004F300B164AC /* GoodsDetailPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailPageView.swift; sourceTree = "<group>"; };
 		BD3272F989A8CE65B95A71D6 /* Pods_SwiftUI_Shopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Shopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D609C3069596FEC5F4B06988 /* Pods-SwiftUI-Shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Shopping.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Shopping/Pods-SwiftUI-Shopping.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +183,7 @@
 			children = (
 				14C580752C2D43CE0012993F /* HomeViewController.swift */,
 				14C580772C2D4B780012993F /* HomeView.swift */,
+				8BB44A5F2C3004F300B164AC /* GoodsDetailPageView.swift */,
 			);
 			path = Ctrl;
 			sourceTree = "<group>";
@@ -197,6 +204,8 @@
 		14C580682C2D43AA0012993F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8BB44A5B2C2FF6DA00B164AC /* GoodsListView.swift */,
+				8BB44A5D2C2FF91C00B164AC /* LoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -434,6 +443,7 @@
 				14867C682C2EA4B60093472D /* LNNetworkConfiguration.swift in Sources */,
 				14867C5A2C2E59DF0093472D /* CartView.swift in Sources */,
 				14867C742C2EA5350093472D /* UIDevice+K_Addition.swift in Sources */,
+				8BB44A5E2C2FF91C00B164AC /* LoadingView.swift in Sources */,
 				14C580762C2D43CE0012993F /* HomeViewController.swift in Sources */,
 				14C5807A2C2D69F40012993F /* CategoryView.swift in Sources */,
 				14867C5C2C2E61AB0093472D /* TabBarController.swift in Sources */,
@@ -448,6 +458,8 @@
 				14867C582C2E59D20093472D /* MineView.swift in Sources */,
 				14C580522C2D40580012993F /* SwiftUI_ShoppingApp.swift in Sources */,
 				14867C6B2C2EA4B60093472D /* LNRequest.swift in Sources */,
+				8BB44A5C2C2FF6DA00B164AC /* GoodsListView.swift in Sources */,
+				8BB44A602C3004F300B164AC /* GoodsDetailPageView.swift in Sources */,
 				14C5805E2C2D405A0012993F /* SwiftUI_Shopping.xcdatamodeld in Sources */,
 				14867C732C2EA5350093472D /* GlobalConfig.swift in Sources */,
 				14867C602C2E62180093472D /* ExampleView.swift in Sources */,

@@ -19,58 +19,119 @@ enum Tab: String, Identifiable {
 }
   
 struct ContentView: View {
+    
+    @State var shouldLoadView2 = false
+    @State var shouldLoadView3 = false
+    @State var shouldLoadView4 = false
+
+    @State var op1 = 1.0
+    @State var op2 = 0.0
+    @State var op3 = 0.0
+    @State var op4 = 0.0
+    
     @State private var selectedTab = Tab.home
       
+    @State private var isCurrentPage = true
+    
     var body: some View {
+        
+        var hView = HomeView(isCurrentPage: $isCurrentPage)
+         let cView = CategoryView(isCurrentPage: $isCurrentPage)
+         let cartV = CartView(isCurrentPage: $isCurrentPage)
+         let mView = MineView(isCurrentPage: $isCurrentPage)
         
         ZStack {
             
 //            NavigationView{
                
                 VStack{
-                    // 内容视图，根据 selectedTab 切换
-                    if selectedTab == Tab.home {
+                    
+                    ZStack{
                         
-                        HomeView()
                         
-                    } else if selectedTab == Tab.profile {
+                        hView
+                            .opacity(op1)
                         
-                        CategoryView()
-                    } else if selectedTab == Tab.settings {
+                        if(shouldLoadView2){
+                            
+                            
+                            cView
+                            .opacity(op2)
+                        }
+                        if(shouldLoadView3){
+                            
+                            
+                            cartV
+                            .opacity(op3)
+                        }
+                        if(shouldLoadView4){
+                            
+                            
+                            mView
+                            .opacity(op4)
+                        }
                         
-                        CartView()
-                    }else if selectedTab == Tab.mine{
                         
-                        MineView()
                     }
                     
                     Spacer()
-                    // 标签栏视图
-                    HStack {
-                        Spacer()
-                        
-                        TabButton(tab: Tab.home, isSelected: selectedTab == Tab.home) {
-                            selectedTab = Tab.home
-                        }
-                        Spacer()
-                        TabButton(tab: Tab.profile, isSelected: selectedTab == Tab.profile) {
-                            selectedTab = Tab.profile
-                        }
-                        Spacer()
-                        TabButton(tab: Tab.settings, isSelected: selectedTab == Tab.settings) {
-                            selectedTab = Tab.settings
-                        }
-                        Spacer()
-                        TabButton(tab: Tab.mine, isSelected: selectedTab == Tab.mine) {
-                            selectedTab = Tab.mine
-                        }
-                        Spacer()
-                    }
-                    .padding(.bottom) // 将标签栏放在底部
-                    .frame(height: 50) // 设置标签栏的高度a
                     
+                    Group {
+                        
+                        if self.isCurrentPage{
+                            
+                            // 标签栏视图
+                            HStack {
+                                Spacer()
+                                
+                                TabButton(tab: Tab.home, isSelected: selectedTab == Tab.home) {
+                                    op1 = 1.0
+                                    op2 = 0.0
+                                    op3 = 0.0
+                                    op4 = 0.0
+                                    selectedTab = Tab.home
+                                }
+                                Spacer()
+                                TabButton(tab: Tab.profile, isSelected: selectedTab == Tab.profile) {
+                                    op2 = 1.0
+                                    op1 = 0.0
+                                    op3 = 0.0
+                                    op4 = 0.0
+                                    shouldLoadView2 = true
+                                    selectedTab = Tab.profile
+                                }
+                                Spacer()
+                                TabButton(tab: Tab.settings, isSelected: selectedTab == Tab.settings) {
+                                    op3 = 1.0
+                                    op2 = 0.0
+                                    op1 = 0.0
+                                    op4 = 0.0
+                                    shouldLoadView3 = true
+                                    selectedTab = Tab.settings
+                                }
+                                Spacer()
+                                TabButton(tab: Tab.mine, isSelected: selectedTab == Tab.mine) {
+                                    op4 = 1.0
+                                    op2 = 0.0
+                                    op3 = 0.0
+                                    op1 = 0.0
+                                    shouldLoadView4 = true
+                                    selectedTab = Tab.mine
+                                }
+                                Spacer()
+                            }
+                            .padding(.bottom) // 将标签栏放在底部
+                            .frame(height: 50) // 设置标签栏的高度a
+                        }
+                    }
                 }
-//            }
+            
+        }.onAppear(){
+            
+            
+        }
+        .onDisappear(){
+            
             
         }
     }
@@ -124,8 +185,8 @@ struct TabButton: View {
 //    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 //}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+//    }
+//}
