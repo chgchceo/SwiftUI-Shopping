@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct HomeView: View {
     
@@ -25,18 +26,13 @@ struct HomeView: View {
                
                 TopView()
                
-                VStack{
-                    
-                    Image("banner1")
-                        .resizable()
-                        .frame(width: .infinity,height: 200)
-                    
-                    Spacer()
-                    
-                }
-                
                 ScrollView {
                     
+                        
+                   Image("banner1")
+                            .resizable()
+                            .frame(width: .infinity,height: 200)
+                        
                     if let data:[DetailModel] = self.data{
                         
                         ForEach(data) { detail in
@@ -52,17 +48,20 @@ struct HomeView: View {
                      }
                 
                     .navigationBarTitle("首页", displayMode: .inline)
-                    .toolbar(content: {
+                    .navigationBarItems(leading: Button(action: {
                         
-                        NavigationLink(destination: 
-                            
-                        HomeView()
-                        ) {
-                            Text("搜索")
-                        }
-                    })
+                        print("ss")
+                    }, label: {
+                        Text("搜索")
+                            .foregroundColor(.black)
+                    }),trailing: Button(action: {
+                        
+                        print("sz")
+                    }, label: {
+                        Text("设置")
+                            .foregroundColor(.red)
+                    }))
         }
-        .background(.white)
         .onAppear(){
             
             //加载网络数据
@@ -96,19 +95,47 @@ struct GoodsListView:View {
     var body: some View{
         
         HStack{
-            
-            WebImageView(imageURL: URL(string: detail?.goods_image ?? "")!)
-                .frame(width: 350,height: 350)
-                .aspectRatio(contentMode: .fit)
-                .clipped()
-            
-            
-            
-            VStack{
+          
+            HStack{
                 
-                
+                // 假设你有一个图片的URL
+                let imageURL = URL(string: detail?.goods_image ?? "")!
+                URLImage(imageURL, placeholder: Image("logo")){
+                    
+                    image in
+                    
+                    image
+                        .image.resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
+                    .frame(width: 150, height: 150)
+                    .cornerRadius(15)
             }
-        }
+            
+            VStack(alignment: .leading, spacing: 10){
+                
+                Text(detail?.goods_name ?? "")
+                    
+                
+                Text("销售量:\(detail?.goods_sales ?? "")")
+                
+                HStack{
+                    
+                    Text(detail?.goods_price_min ?? "")
+                        .foregroundColor(Color.red)
+                        .font(.system(size:20))
+                        .fontWeight(Font.Weight.bold)
+                    Text(detail?.goods_price_max ?? "")
+                        .foregroundColor(Color.gray)
+                        .font(.system(size:16))
+                        .strikethrough()
+                    
+                }
+                
+            }.padding(.leading,10)
+        }.padding(15)
+
+            .background(Color.white)
         
     }
 }
@@ -141,6 +168,6 @@ struct TopView:View {
     }
 }
 
-#Preview {
-    HomeView()
-}
+//#Preview {
+//    HomeView()
+//}

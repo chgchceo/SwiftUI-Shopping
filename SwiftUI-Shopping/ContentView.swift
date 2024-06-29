@@ -25,7 +25,7 @@ struct ContentView: View {
         
         ZStack {
             
-            NavigationView{
+//            NavigationView{
                
                 VStack{
                     // 内容视图，根据 selectedTab 切换
@@ -68,9 +68,9 @@ struct ContentView: View {
                     }
                     .padding(.bottom) // 将标签栏放在底部
                     .frame(height: 50) // 设置标签栏的高度a
-                    .background(.white)
+                    
                 }
-            }
+//            }
             
         }
     }
@@ -120,6 +120,12 @@ struct TabButton: View {
     }
 }
 
-#Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+//#Preview {
+//    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+//}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    }
 }

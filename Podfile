@@ -1,4 +1,4 @@
-platform:ios,'12.0'
+platform:ios,'14.0'
 target 'SwiftUI-Shopping' do
   use_frameworks!
   pod 'Alamofire'
@@ -13,9 +13,8 @@ target 'SwiftUI-Shopping' do
   pod 'SDCycleScrollView'
   pod 'EAIntroView'
   pod 'Toast-Swift'
-  pod 'SDWebImageSwiftUI'
-
-  pod 'MJRefresh'
+  pod 'URLImage'
+  pod "SwiftUIRefresh"
 
 
 

@@ -61,6 +61,6 @@ struct NavView: View {
 }
 
 
-#Preview {
-    ExampleView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-}
+//#Preview {
+//    ExampleView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+//}
