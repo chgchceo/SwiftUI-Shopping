@@ -44,6 +44,7 @@ class ItemsModel:BaseModel{
 }
 
 class DetailModel:BaseModel{
+   
     
     var imgUrl:String?
     var imgName:String?

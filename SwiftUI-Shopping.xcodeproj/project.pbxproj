@@ -35,6 +35,8 @@
 		8BB44A5C2C2FF6DA00B164AC /* GoodsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB44A5B2C2FF6DA00B164AC /* GoodsListView.swift */; };
 		8BB44A5E2C2FF91C00B164AC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB44A5D2C2FF91C00B164AC /* LoadingView.swift */; };
 		8BB44A602C3004F300B164AC /* GoodsDetailPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB44A5F2C3004F300B164AC /* GoodsDetailPageView.swift */; };
+		8BDDBABF2C30AFCC004BA826 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDDBABE2C30AFCC004BA826 /* BannerView.swift */; };
+		8BDDBAC22C30BBB0004BA826 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8BDDBAC12C30BBB0004BA826 /* ACarousel */; };
 		BA93BAF65DE712EBA11F07AA /* Pods_SwiftUI_Shopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3272F989A8CE65B95A71D6 /* Pods_SwiftUI_Shopping.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,7 @@
 		8BB44A5B2C2FF6DA00B164AC /* GoodsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoodsListView.swift; path = "SwiftUI-Shopping/GoodsListView.swift"; sourceTree = SOURCE_ROOT; };
 		8BB44A5D2C2FF91C00B164AC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = "SwiftUI-Shopping/LoadingView.swift"; sourceTree = SOURCE_ROOT; };
 		8BB44A5F2C3004F300B164AC /* GoodsDetailPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailPageView.swift; sourceTree = "<group>"; };
+		8BDDBABE2C30AFCC004BA826 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BannerView.swift; path = "SwiftUI-Shopping/Main/Home/Ctrl/BannerView.swift"; sourceTree = SOURCE_ROOT; };
 		BD3272F989A8CE65B95A71D6 /* Pods_SwiftUI_Shopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Shopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D609C3069596FEC5F4B06988 /* Pods-SwiftUI-Shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Shopping.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Shopping/Pods-SwiftUI-Shopping.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDDBAC22C30BBB0004BA826 /* ACarousel in Frameworks */,
 				BA93BAF65DE712EBA11F07AA /* Pods_SwiftUI_Shopping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +210,7 @@
 			children = (
 				8BB44A5B2C2FF6DA00B164AC /* GoodsListView.swift */,
 				8BB44A5D2C2FF91C00B164AC /* LoadingView.swift */,
+				8BDDBABE2C30AFCC004BA826 /* BannerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,6 +346,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-Shopping";
+			packageProductDependencies = (
+				8BDDBAC12C30BBB0004BA826 /* ACarousel */,
+			);
 			productName = "SwiftUI-Shopping";
 			productReference = 14C5804E2C2D40580012993F /* SwiftUI-Shopping.app */;
 			productType = "com.apple.product-type.application";
@@ -369,6 +377,9 @@
 				Base,
 			);
 			mainGroup = 14C580452C2D40580012993F;
+			packageReferences = (
+				8BDDBAC02C30BBB0004BA826 /* XCRemoteSwiftPackageReference "ACarousel" */,
+			);
 			productRefGroup = 14C5804F2C2D40580012993F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -462,6 +473,7 @@
 				8BB44A602C3004F300B164AC /* GoodsDetailPageView.swift in Sources */,
 				14C5805E2C2D405A0012993F /* SwiftUI_Shopping.xcdatamodeld in Sources */,
 				14867C732C2EA5350093472D /* GlobalConfig.swift in Sources */,
+				8BDDBABF2C30AFCC004BA826 /* BannerView.swift in Sources */,
 				14867C602C2E62180093472D /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,6 +692,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BDDBAC02C30BBB0004BA826 /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JWAutumn/ACarousel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BDDBAC12C30BBB0004BA826 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BDDBAC02C30BBB0004BA826 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		14C5805C2C2D405A0012993F /* SwiftUI_Shopping.xcdatamodeld */ = {

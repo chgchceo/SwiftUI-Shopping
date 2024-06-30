@@ -9,7 +9,14 @@ import SwiftUI
 import URLImage
 
 struct HomeView: View {
-
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+      
     @Binding var isCurrentPage:Bool
     @State private var showDetail = false
 
@@ -22,6 +29,9 @@ struct HomeView: View {
 
    @State var homeModel:HomeModel?
     @State var data:[DetailModel]?
+    @State var imgUrls:[DetailModel]?
+    @State var cateArr:[DetailModel]?
+
     var body: some View {
 
         NavigationView {
@@ -36,7 +46,7 @@ struct HomeView: View {
 
                     TopView()
 
-                    RefreshScrollView(offDown: CGFloat(self.data?.count ?? 0) * 200.0 + 200, listH: ScreenH - kNavHeight - kBottomSafeHeight, refreshing: $isRefresh, isMore: $isMore,isHasMore: $isHasMore) {
+                    RefreshScrollView(offDown: CGFloat(self.data?.count ?? 0) * 220.0 + 200, listH: ScreenH - kNavHeight - kBottomSafeHeight, refreshing: $isRefresh, isMore: $isMore,isHasMore: $isHasMore) {
                         // 下拉刷新触发
                         self.page = 1
                         self.initData()
@@ -48,11 +58,48 @@ struct HomeView: View {
                         }
                     } content: {
                         ScrollView {
+                            
+                            if imgUrls?.count ?? 0 > 0{
+                                
+                                BannerView(imageUrls: imgUrls, isCurrentPage: $isCurrentPage)
+                                
+                            }
 
+                            if cateArr?.count ?? 0 > 0{
+                                
+                                LazyVGrid(columns: columns, spacing: 1) {
+                                    
+                                   
+                                    ForEach(self.cateArr!) { detail in
+                                        
+                                        VStack{
+                                            Spacer()
+                                            URLImage(URL(string: detail.imgUrl ?? "")!, placeholder: Image("")){
+                                                
+                                                image in
+                                                
+                                                image
+                                                    .image.resizable()
+                                                    .aspectRatio(contentMode: .fit)
+                                            }
+                                                .frame(width: 30 ,height: 30)
+                                                
+                                            Spacer()
+                                            Text(detail.text!)
+                                                .font(.system(size: 12))
+                                                .foregroundColor(.gray)
+                                            Spacer()
+                                        }
+                                        
+                                    }   .frame(width: ScreenWidth/5.0, height: 80)
+                                        .background(Color.white)
+                                        .cornerRadius(0)
+                                    
+                                }
+                                                
+                                       
+                            }
 
-                            Image("banner1")
-                                .resizable()
-                                .frame(width: ScreenWidth,height: 200)
                             if let data:[DetailModel] = self.data{
 
                                 ForEach(data) { detail in
@@ -135,7 +182,9 @@ struct HomeView: View {
             if let model = HomeModel.deserialize(from: responseData as? [String:Any]){
                 self.homeModel = model
                 self.data = model.data?.pageData?.items?[6].data
-
+                self.imgUrls = model.data?.pageData?.items?[1].data
+                self.cateArr = model.data?.pageData?.items?[3].data
+                
             }
             self.isLoading = false
             self.isRefresh = false

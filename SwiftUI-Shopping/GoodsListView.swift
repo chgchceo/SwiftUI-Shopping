@@ -52,10 +52,12 @@ struct GoodsListView:View {
                 }
                 
             }.padding(.leading,10)
-        }.padding(15)
-
+        }
+        .padding(.horizontal,15)
             .frame(height: 200)
             .background(Color.white)
+            .padding(.bottom,10)
+            
     }
     
 }

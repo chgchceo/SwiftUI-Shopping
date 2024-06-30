@@ -15,8 +15,7 @@ target 'SwiftUI-Shopping' do
   pod 'Toast-Swift'
   pod 'URLImage'
   pod "SwiftUIRefresh"
-
-
+pod 'SwiftUIPager'
 
 
 
