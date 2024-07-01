@@ -19,6 +19,7 @@ struct HomeView: View {
       
     @Binding var isCurrentPage:Bool
     @State private var showDetail = false
+    @State private var showSearchList = false
 
     @State var page:Int = 1 //页数
     @State var isRefresh = false //下拉刷新
@@ -42,9 +43,20 @@ struct HomeView: View {
                 Rectangle()
                     .foregroundColor(Color(white: 0.9))
 
-                VStack{
+                VStack(spacing: 0){
+                    
+                    NavigationLink(
+                        destination: SearchHistoryListView(),
+                        isActive: $showSearchList,
+                        label: {
+                            
+                        })
 
-                    TopView()
+
+                    TopSearchView().onTapGesture {
+                        self.isCurrentPage = false
+                        self.showSearchList = true
+                    }
 
                     RefreshScrollView(offDown: CGFloat(self.data?.count ?? 0) * 220.0 + 200, listH: ScreenH - kNavHeight - kBottomSafeHeight, refreshing: $isRefresh, isMore: $isMore,isHasMore: $isHasMore) {
                         // 下拉刷新触发
@@ -129,9 +141,9 @@ struct HomeView: View {
                         }
                     }
 
-                    Spacer()
+//                    Spacer()
 
-                         }
+                }.padding(0)
 
                         .navigationBarTitle("首页", displayMode: .inline)
                         .navigationBarItems(leading: Button(action: {
@@ -194,33 +206,6 @@ struct HomeView: View {
 }
 
 
-struct TopView:View {
-
-    @State private var text = "" // 使用 @State 包装器来跟踪文本变化
-    var body: some View {
-
-        ZStack{
-
-            RoundedRectangle(cornerRadius: 40)
-                .frame(maxWidth: .infinity)
-                .frame(height: 60)
-                .padding(.horizontal,20)
-                .padding(.top,10)
-                .padding(.bottom ,5)
-                .foregroundColor(.white)
-            HStack{
-
-                Image(systemName: "magnifyingglass")
-                    .padding(.leading)
-                    .padding(.leading)
-                TextField("请在此输入搜索关键词", text: $text)
-
-            }
-        }
-
-        Spacer()
-    }
-}
 
 //#Preview {
 //    HomeView()

@@ -813,7 +813,7 @@
 		1C15DC4630E0737966AFA365AE731510 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/Core/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		1C19376C1613595158CD8939B5A1AD8E /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessibilityIdentifiers.swift; path = Sources/Instructions/Helpers/Internal/AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		1C1B11E11ACB3574A2CCADD0B606E8F9 /* SwiftMessages-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftMessages-Info.plist"; sourceTree = "<group>"; };
-		1C22078EBCD4EA2D0BEA63674BE8FBF0 /* Instructions */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Instructions; path = Instructions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C22078EBCD4EA2D0BEA63674BE8FBF0 /* Instructions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Instructions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2C73C073CB521456F4BCD6E1491870 /* Introspect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Introspect.debug.xcconfig; sourceTree = "<group>"; };
 		1C476158B0F4FB0181939AB0D77EF5B9 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
 		1C789AF72C7710BB14A8D01B42AA6D2D /* SDAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImage.h; path = SDWebImage/Core/SDAnimatedImage.h; sourceTree = "<group>"; };
@@ -844,7 +844,7 @@
 		277045BCC1610E2D3AD163A08A8792C5 /* JXPageControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXPageControl.modulemap; sourceTree = "<group>"; };
 		2832A13D63D1E2CE12F2F322B701948D /* SwiftUIPager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUIPager.release.xcconfig; sourceTree = "<group>"; };
 		2842EAD32C7749E8573F99DAD2AD97CB /* SwiftMessageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMessageModifier.swift; path = SwiftMessages/SwiftMessageModifier.swift; sourceTree = "<group>"; };
-		2887F2E4A4C98BEF767A166683622593 /* URLImage */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = URLImage; path = URLImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2887F2E4A4C98BEF767A166683622593 /* URLImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C35C99003F2B998FC5A42C2D5B55F5 /* PagerContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerContent.swift; path = Sources/SwiftUIPager/PagerContent.swift; sourceTree = "<group>"; };
 		28CE82D3868B465944AE70F0FA833CEA /* PassthroughView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassthroughView.swift; path = SwiftMessages/PassthroughView.swift; sourceTree = "<group>"; };
 		2916486BD9B3C10B8F23F1D3859BEFB7 /* SDImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGIFCoder.m; path = SDWebImage/Core/SDImageGIFCoder.m; sourceTree = "<group>"; };
@@ -946,7 +946,7 @@
 		51E673FA124B8912E97719E775E76DEA /* SDCycleScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDCycleScrollView.release.xcconfig; sourceTree = "<group>"; };
 		52365E57241C6F1A61D9812DD3E3B8F7 /* CoachMarkLayoutHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoachMarkLayoutHelper.swift; path = Sources/Instructions/Helpers/Internal/CoachMarkLayoutHelper.swift; sourceTree = "<group>"; };
 		529B95D6238401EB0550DE9C878755AC /* errorIconLight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "errorIconLight@2x.png"; path = "SwiftMessages/Resources/errorIconLight@2x.png"; sourceTree = "<group>"; };
-		539E59013E652C004A42E94F4B1A00DB /* JXBanner */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXBanner; path = JXBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		539E59013E652C004A42E94F4B1A00DB /* JXBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JXBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B98FB24814E2B8A5163A9131D24DA3 /* CGContext+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGContext+Extensions.swift"; path = "Sources/URLImage/Utils/CoreGraphics/CGContext+Extensions.swift"; sourceTree = "<group>"; };
 		540B2C7E88CEFCD6FBEE29C4ACF0F55B /* BuiltInBasicType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BuiltInBasicType.swift; path = Source/BuiltInBasicType.swift; sourceTree = "<group>"; };
 		5523DDBAA1ABF4DE31A11753A31BFCBC /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Source/ISO8601DateTransform.swift; sourceTree = "<group>"; };
@@ -989,7 +989,7 @@
 		6276580B59208E2E15810695D5F04A7F /* MarginAdjustable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MarginAdjustable+Extensions.swift"; path = "SwiftMessages/MarginAdjustable+Extensions.swift"; sourceTree = "<group>"; };
 		62AA7757C00B9279834F751C357C022A /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAsyncBlockOperation.m; path = SDWebImage/Private/SDAsyncBlockOperation.m; sourceTree = "<group>"; };
 		6368EC3F5D7197E400E53636582E05D6 /* EARestrictedScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EARestrictedScrollView.h; path = EARestrictedScrollView/EARestrictedScrollView.h; sourceTree = "<group>"; };
-		638D0F280C9623606B5CCC57D553565D /* JXPageControl */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXPageControl; path = JXPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		638D0F280C9623606B5CCC57D553565D /* JXPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JXPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D587347C347BA44AEA5CA49BD2ACDA /* SDWebImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.release.xcconfig; sourceTree = "<group>"; };
 		646A6F8AEDC85E847AB5A24C33B36CDD /* HandyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HandyJSON.modulemap; sourceTree = "<group>"; };
 		646ADF5872132E07D17BBCD7527BDD7D /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/Core/SDWebImageDefine.m; sourceTree = "<group>"; };
@@ -1034,7 +1034,7 @@
 		73741729608FBAA0D1F80C8184FA9ECF /* SDImageCachesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManager.h; path = SDWebImage/Core/SDImageCachesManager.h; sourceTree = "<group>"; };
 		73D4409CCE5A5DD00254B638F3C4C1D4 /* SDImageHEICCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageHEICCoder.h; path = SDWebImage/Core/SDImageHEICCoder.h; sourceTree = "<group>"; };
 		743E9BB80F940A59AEF56F2F715A2620 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
-		74B3EEA009055ED6288BB6ED2CC3E8A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Toast/Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		74B3EEA009055ED6288BB6ED2CC3E8A4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Toast/Resources/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		750B328E84380AFC754B8591B7F2D93D /* Toast-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		750D34D40F605AD6E3CE0A2512CDBA55 /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Extensions.swift"; path = "SwiftMessages/NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
 		752C0B0F7CA0D470D34AFA56F757378F /* SwiftMessages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMessages.release.xcconfig; sourceTree = "<group>"; };
@@ -1093,10 +1093,10 @@
 		8919E90F2343BB7EE7F34647B13BB684 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		8A965E52F65425982511E1EB556135AA /* SDGraphicsImageRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDGraphicsImageRenderer.m; path = SDWebImage/Core/SDGraphicsImageRenderer.m; sourceTree = "<group>"; };
 		8B07921CC4433C8E6B552F214C6B63E8 /* SDImageTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageTransformer.h; path = SDWebImage/Core/SDImageTransformer.h; sourceTree = "<group>"; };
-		8B6CF5C20C32EE9F7F0862FF892524DE /* SDCycleScrollView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDCycleScrollView; path = SDCycleScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6CF5C20C32EE9F7F0862FF892524DE /* SDCycleScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDCycleScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B739836D5FA73A8232333BB327E5755 /* SDImageIOAnimatedCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOAnimatedCoderInternal.h; path = SDWebImage/Private/SDImageIOAnimatedCoderInternal.h; sourceTree = "<group>"; };
 		8B96C9D449DF1C3D8CF846239118C71F /* SDAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImage.m; path = SDWebImage/Core/SDAnimatedImage.m; sourceTree = "<group>"; };
-		8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CountdownLabel; path = CountdownLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CountdownLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9419CCC4FBBC74F376BAF5DE76DCB5 /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
 		8CE78C87F824768C0D49B6A3C2CFB945 /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Evaporate.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
 		8EF11AD5DF8DBB95B45FFAE9732DEB8F /* PullToRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PullToRefresh.swift; path = Sources/PullToRefresh.swift; sourceTree = "<group>"; };
@@ -1117,7 +1117,7 @@
 		9584BD4501A98E765AB0E15FF38EE6D4 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
 		95C0B74874E748E7844EAED50BC1391A /* CountdownLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountdownLabel.debug.xcconfig; sourceTree = "<group>"; };
 		9625292D9E38DB1D58BD4882431D1FDD /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+Extensions.swift"; path = "SwiftMessages/UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
-		962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9649DB1147490422B3945E8129015910 /* UIImage+MemoryCacheCost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MemoryCacheCost.h"; path = "SDWebImage/Core/UIImage+MemoryCacheCost.h"; sourceTree = "<group>"; };
 		96529E556742C8229E435A138BBEA178 /* LTMorphingLabel+Pixelate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Pixelate.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Pixelate.swift"; sourceTree = "<group>"; };
 		96D61E59DC09BCAD7ECEF2236F919EF5 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TAAnimatedDotView.h; path = SDCycleScrollView/Lib/SDCycleScrollView/PageControl/TAAnimatedDotView.h; sourceTree = "<group>"; };
@@ -1137,12 +1137,12 @@
 		9D1F0790E7274F3D6D103FFA36CE8102 /* KeyboardTrackingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardTrackingView.swift; path = SwiftMessages/KeyboardTrackingView.swift; sourceTree = "<group>"; };
 		9D41F13AB4D2EFD1A63B73A74AFA81FA /* SDWebImageCacheSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheSerializer.h; path = SDWebImage/Core/SDWebImageCacheSerializer.h; sourceTree = "<group>"; };
 		9D902045BE183E591F3972897530C093 /* SwiftUIPager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftUIPager.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D9B1FE1C8A5AEC1E9319CA66E867CA9 /* PhysicsPanHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhysicsPanHandler.swift; path = SwiftMessages/PhysicsPanHandler.swift; sourceTree = "<group>"; };
 		9DDAC47FC9492206D8ECFE7DD2F8F497 /* SDWebImageDownloaderDecryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderDecryptor.m; path = SDWebImage/Core/SDWebImageDownloaderDecryptor.m; sourceTree = "<group>"; };
 		9E588037B6B7B89EBA540B1F2BDCA0F9 /* DefaultsAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultsAdapter.swift; path = Sources/DefaultsAdapter.swift; sourceTree = "<group>"; };
 		9E6CDEDACD9FD8AEB020B1E66ABF7B85 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/Core/SDImageCacheConfig.h; sourceTree = "<group>"; };
-		9F993663B3367094F9B371817504B205 /* EARestrictedScrollView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EARestrictedScrollView; path = EARestrictedScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F993663B3367094F9B371817504B205 /* EARestrictedScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EARestrictedScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCAAF4D8D6A01E27AAF0DD13455204E /* Introspect-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Introspect-Info.plist"; sourceTree = "<group>"; };
 		9FF3CD4616DBD70362E4D546CE400D17 /* SwiftUIPager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUIPager.debug.xcconfig; sourceTree = "<group>"; };
 		A06430FCC084AF990CBA2B2762A95195 /* EAIntroView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EAIntroView.h; path = EAIntroView/EAIntroView.h; sourceTree = "<group>"; };
@@ -1187,7 +1187,7 @@
 		AF2D4DB468607D847668A7756030D65E /* CircleActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircleActivityView.swift; path = Sources/URLImage/Views/ProgressView/Circle/CircleActivityView.swift; sourceTree = "<group>"; };
 		AF96ED8A049EC68F00E89B80FADBEEB2 /* SCLAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCLAlertView-Info.plist"; sourceTree = "<group>"; };
 		B02CDAA6583A2731975FB34C6BE3D6C6 /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = SwiftMessages/Animator.swift; sourceTree = "<group>"; };
-		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D5AD24167DA40B58FE872C9958ED5A /* EARestrictedScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EARestrictedScrollView.release.xcconfig; sourceTree = "<group>"; };
 		B11592B29E228A5BD0F7D0DB48C7EBA6 /* CoachMarkPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoachMarkPosition.swift; path = Sources/Instructions/Helpers/Internal/Enums/CoachMarkPosition.swift; sourceTree = "<group>"; };
 		B146837D8666F3811D4EAFAA825FA3B7 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/Core/SDWebImageDownloader.h; sourceTree = "<group>"; };
@@ -1207,7 +1207,7 @@
 		B68A0B79B2832EFBA468CCE49BBD5984 /* EAIntroView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EAIntroView-Info.plist"; sourceTree = "<group>"; };
 		B7531973C04410FB493411D8F21815F5 /* SDCycleScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDCycleScrollView-dummy.m"; sourceTree = "<group>"; };
 		B755783CAEA349E584E0106DCF31D1EE /* SwipeInteractionArea.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractionArea.swift; path = Sources/SwiftUIPager/PageConfiguration/SwipeInteractionArea.swift; sourceTree = "<group>"; };
-		B7715718A7E1E513F9BC2E99B977FCA9 /* SwiftyUserDefaults */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyUserDefaults; path = SwiftyUserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7715718A7E1E513F9BC2E99B977FCA9 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80790A00A76ED877B24238AE813B2F1 /* ImageProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProxy.swift; path = Sources/URLImage/Model/ImageProxy.swift; sourceTree = "<group>"; };
 		B99854A18696B3AE76DC4A20F454B126 /* PauseStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PauseStyle.swift; path = "Sources/Instructions/Protocols and Enums/Public/Enums/PauseStyle.swift"; sourceTree = "<group>"; };
 		BA08E58A1083EBF9F382FB8037B16FA0 /* TADotView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TADotView.h; path = SDCycleScrollView/Lib/SDCycleScrollView/PageControl/TADotView.h; sourceTree = "<group>"; };
@@ -1259,7 +1259,7 @@
 		CC3C3077408AF5E5D69C429DF38AF6BA /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Fall.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
 		CC993CBE8E1501F4ABB6E8CA89852C07 /* SDFileAttributeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDFileAttributeHelper.h; path = SDWebImage/Private/SDFileAttributeHelper.h; sourceTree = "<group>"; };
 		CC9CE3FBF02F75EC5585787DD86453F3 /* SDImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoder.m; path = SDWebImage/Core/SDImageCoder.m; sourceTree = "<group>"; };
-		CD54121DDA84872534168702B5F92950 /* HandyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HandyJSON; path = HandyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD54121DDA84872534168702B5F92950 /* HandyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE20D4473EF160F2B09B22A54D0C8BF0 /* infoIconLight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "infoIconLight@3x.png"; path = "SwiftMessages/Resources/infoIconLight@3x.png"; sourceTree = "<group>"; };
 		CEAA7AD6460CC65A3E0C8DD30C69B268 /* SDImageHEICCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageHEICCoder.m; path = SDWebImage/Core/SDImageHEICCoder.m; sourceTree = "<group>"; };
 		CEC66D714537B9419C83716F3C5D2021 /* warningIconLight@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIconLight@3x.png"; path = "SwiftMessages/Resources/warningIconLight@3x.png"; sourceTree = "<group>"; };
@@ -1267,7 +1267,7 @@
 		CFB58381F2AE0ABE3DBFE085FB46D7AB /* warningIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIcon@3x.png"; path = "SwiftMessages/Resources/warningIcon@3x.png"; sourceTree = "<group>"; };
 		D042288AADBAA1DB762643794557394A /* errorIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = errorIcon.png; path = SwiftMessages/Resources/errorIcon.png; sourceTree = "<group>"; };
 		D060CDD2C006530616869DA1DB5AAD62 /* Introspect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Introspect-prefix.pch"; sourceTree = "<group>"; };
-		D0A70003FD5E49B30CA83DAAFE03116B /* Introspect */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Introspect; path = Introspect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A70003FD5E49B30CA83DAAFE03116B /* Introspect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Introspect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AB71B4C69A44F8B3959902AD9DAA1B /* PaginationSensitivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaginationSensitivity.swift; path = Sources/SwiftUIPager/PageConfiguration/PaginationSensitivity.swift; sourceTree = "<group>"; };
 		D0B2C5D0117A0D6739943FF2000975EA /* CoachMarkView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoachMarkView.swift; path = Sources/Instructions/Views/CoachMarkView.swift; sourceTree = "<group>"; };
 		D0C4893B6D4508DD6F5A2D5A3B18D4B4 /* SDImageLoadersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoadersManager.h; path = SDWebImage/Core/SDImageLoadersManager.h; sourceTree = "<group>"; };
@@ -1361,7 +1361,7 @@
 		F64E28D2318711BEE15489D87D9882B6 /* SwiftUIPager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftUIPager-dummy.m"; sourceTree = "<group>"; };
 		F6D9221E3675FA6E24378C9FF1056213 /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Sources/URLImage/Utils/Log.swift; sourceTree = "<group>"; };
 		F82F99047B35A58C0731A1CD528485E1 /* warningIconLight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningIconLight@2x.png"; path = "SwiftMessages/Resources/warningIconLight@2x.png"; sourceTree = "<group>"; };
-		F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EAIntroView; path = EAIntroView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EAIntroView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA089856DC9E9BEB64598A27147B2047 /* LTMorphingLabel+Anvil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LTMorphingLabel+Anvil.swift"; path = "CountdownLabel/LTMorphingLabel/LTMorphingLabel+Anvil.swift"; sourceTree = "<group>"; };
 		FA618A99436A944FCA19CAAF86DFAE29 /* UIImage+ExtendedCacheData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ExtendedCacheData.h"; path = "SDWebImage/Core/UIImage+ExtendedCacheData.h"; sourceTree = "<group>"; };
 		FA8693F97E714EFFF5F28650A9525731 /* HandyJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HandyJSON.release.xcconfig; sourceTree = "<group>"; };
@@ -1575,7 +1575,6 @@
 				3C3923D92E0161329B2C850E0E4635CA /* App */,
 				16103422D4035EB5F378EE202D54F260 /* Support Files */,
 			);
-			name = SwiftMessages;
 			path = SwiftMessages;
 			sourceTree = "<group>";
 		};
@@ -1700,7 +1699,6 @@
 				75A02A5D6C2A7DA7BE494E44A58D2471 /* SCLExtensions.swift */,
 				A328709F1F852CB1DE51D228AD296F57 /* Support Files */,
 			);
-			name = SCLAlertView;
 			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
@@ -1730,7 +1728,6 @@
 				F936FCA7A9C675D1FC112EAA3DB1F36B /* Core */,
 				0424B33626BE7D432876A15DA148A2F8 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1840,7 +1837,6 @@
 				BA35D535ECA146730240FB620561DB69 /* LTStringDiffResult.swift */,
 				EB1D36F5E1CE3CC2384EB271DBA4075F /* Support Files */,
 			);
-			name = CountdownLabel;
 			path = CountdownLabel;
 			sourceTree = "<group>";
 		};
@@ -1851,7 +1847,6 @@
 				03E60439D7EA1A5D16A8BDD304A806EC /* EARestrictedScrollView.m */,
 				87FACFBDABF210F1C86BC1664DD691EE /* Support Files */,
 			);
-			name = EARestrictedScrollView;
 			path = EARestrictedScrollView;
 			sourceTree = "<group>";
 		};
@@ -1919,7 +1914,6 @@
 				5D422FDA816649034339BDAD8CFD6AC5 /* Validation.swift */,
 				D9FBB5ED5A31D1B99BF3662EACB9CD89 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -2013,7 +2007,6 @@
 				5A3626C2A5057868CA31206803BB6575 /* Support Files */,
 				2CBFACF39BEE86C1F7EFAC72E7B52C45 /* Transform */,
 			);
-			name = JXPageControl;
 			path = JXPageControl;
 			sourceTree = "<group>";
 		};
@@ -2114,7 +2107,6 @@
 				5FAC09A3116897F48B4B72363FC8D01E /* Version.swift */,
 				81D4435A123E3414989543EE7C5FB0C2 /* Support Files */,
 			);
-			name = URLImage;
 			path = URLImage;
 			sourceTree = "<group>";
 		};
@@ -2189,7 +2181,6 @@
 				50EBCE07798BCECB4AAE298211C1C743 /* URLTransform.swift */,
 				F2563331BE13C91CE781F8B0BD6CDE93 /* Support Files */,
 			);
-			name = HandyJSON;
 			path = HandyJSON;
 			sourceTree = "<group>";
 		};
@@ -2199,7 +2190,6 @@
 				8EF11AD5DF8DBB95B45FFAE9732DEB8F /* PullToRefresh.swift */,
 				FDDC5F5693A38CBC5E834EFE7083D042 /* Support Files */,
 			);
-			name = SwiftUIRefresh;
 			path = SwiftUIRefresh;
 			sourceTree = "<group>";
 		};
@@ -2210,7 +2200,6 @@
 				3083501333D416A9ACA7955576528C0B /* PageControl */,
 				35701895BA393942189826975965EB7D /* Support Files */,
 			);
-			name = JXBanner;
 			path = JXBanner;
 			sourceTree = "<group>";
 		};
@@ -2247,7 +2236,6 @@
 				F2E2984D83300482688296E987BAEF28 /* View+Helper.swift */,
 				DFCAA9BDACFF8B01E9B51F4893C8CD59 /* Support Files */,
 			);
-			name = SwiftUIPager;
 			path = SwiftUIPager;
 			sourceTree = "<group>";
 		};
@@ -2305,7 +2293,6 @@
 				65F246DBD9AC5D6302AAED3B9293957B /* ViewControllerConfiguration.swift */,
 				F6F8FA448330FE9148D13555252692DB /* Support Files */,
 			);
-			name = Instructions;
 			path = Instructions;
 			sourceTree = "<group>";
 		};
@@ -2336,7 +2323,6 @@
 				12B82D212ED206488BE573989B9221CD /* UIView+SDExtension.m */,
 				AB89E6AC4DFE78EE4C723EAF34B451B5 /* Support Files */,
 			);
-			name = SDCycleScrollView;
 			path = SDCycleScrollView;
 			sourceTree = "<group>";
 		};
@@ -2347,7 +2333,6 @@
 				C5A83B991557C1917D9626F701B6CC74 /* Resources */,
 				2341C168F95F77EA7A5A943DBE3613B2 /* Support Files */,
 			);
-			name = "Toast-Swift";
 			path = "Toast-Swift";
 			sourceTree = "<group>";
 		};
@@ -2371,7 +2356,6 @@
 				AEAE2ACDBFED900A29663407937BEEA7 /* EAIntroView.m */,
 				2067A4BDB7FD487DFC2822881DAB1AE4 /* Support Files */,
 			);
-			name = EAIntroView;
 			path = EAIntroView;
 			sourceTree = "<group>";
 		};
@@ -2423,7 +2407,6 @@
 				235285A94F5712538302F138AE8CC6F3 /* PropertyWrappers.swift */,
 				84037D89FB9C5F6CAC945DDEEF1B75FE /* Support Files */,
 			);
-			name = SwiftyUserDefaults;
 			path = SwiftyUserDefaults;
 			sourceTree = "<group>";
 		};
@@ -2431,26 +2414,26 @@
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel */,
-				F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView */,
-				9F993663B3367094F9B371817504B205 /* EARestrictedScrollView */,
-				CD54121DDA84872534168702B5F92950 /* HandyJSON */,
-				1C22078EBCD4EA2D0BEA63674BE8FBF0 /* Instructions */,
-				D0A70003FD5E49B30CA83DAAFE03116B /* Introspect */,
-				539E59013E652C004A42E94F4B1A00DB /* JXBanner */,
-				638D0F280C9623606B5CCC57D553565D /* JXPageControl */,
+				8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel.framework */,
+				F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView.framework */,
+				9F993663B3367094F9B371817504B205 /* EARestrictedScrollView.framework */,
+				CD54121DDA84872534168702B5F92950 /* HandyJSON.framework */,
+				1C22078EBCD4EA2D0BEA63674BE8FBF0 /* Instructions.framework */,
+				D0A70003FD5E49B30CA83DAAFE03116B /* Introspect.framework */,
+				539E59013E652C004A42E94F4B1A00DB /* JXBanner.framework */,
+				638D0F280C9623606B5CCC57D553565D /* JXPageControl.framework */,
 				D1426E3F469D4410752F2755AEEBFB63 /* Pods-SwiftUI-Shopping */,
-				962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView */,
-				8B6CF5C20C32EE9F7F0862FF892524DE /* SDCycleScrollView */,
-				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */,
+				962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */,
+				8B6CF5C20C32EE9F7F0862FF892524DE /* SDCycleScrollView.framework */,
+				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */,
 				4824F23D80FF9070A5F8A452DB11EB9A /* SwiftMessages */,
 				753DD909979478A0C1B33E0524504EF1 /* SwiftMessages-SwiftMessages */,
 				EE18735978C1FD3A42D4D3D0356F3CA6 /* SwiftUIPager */,
 				7FB86C9B5FFA7AE1F8A3810D68ECABEA /* SwiftUIRefresh */,
-				B7715718A7E1E513F9BC2E99B977FCA9 /* SwiftyUserDefaults */,
+				B7715718A7E1E513F9BC2E99B977FCA9 /* SwiftyUserDefaults.framework */,
 				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast-Swift */,
 				13FD39576595D8A884BF5166065C5236 /* Toast-Swift-Toast-Swift */,
-				2887F2E4A4C98BEF767A166683622593 /* URLImage */,
+				2887F2E4A4C98BEF767A166683622593 /* URLImage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2495,7 +2478,6 @@
 				48254C8ED0AB53EA648EE34D81DF6877 /* ViewExtensions.swift */,
 				EE6126A1606EE994D2C32EA3ACE35EE5 /* Support Files */,
 			);
-			name = Introspect;
 			path = Introspect;
 			sourceTree = "<group>";
 		};
@@ -2950,7 +2932,7 @@
 			);
 			name = CountdownLabel;
 			productName = CountdownLabel;
-			productReference = 8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel */;
+			productReference = 8C86383D4AEF4A56A77E21BA63D72A10 /* CountdownLabel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		10D88C24864319FF583AD6D156896F32 /* HandyJSON */ = {
@@ -2968,7 +2950,7 @@
 			);
 			name = HandyJSON;
 			productName = HandyJSON;
-			productReference = CD54121DDA84872534168702B5F92950 /* HandyJSON */;
+			productReference = CD54121DDA84872534168702B5F92950 /* HandyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3847153A6E5EEFB86565BA840768F429 /* SDWebImage */ = {
@@ -2986,7 +2968,7 @@
 			);
 			name = SDWebImage;
 			productName = SDWebImage;
-			productReference = B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */;
+			productReference = B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		59F0EC9E7C53B8F2B2B1AC59226250AB /* URLImage */ = {
@@ -3004,7 +2986,7 @@
 			);
 			name = URLImage;
 			productName = URLImage;
-			productReference = 2887F2E4A4C98BEF767A166683622593 /* URLImage */;
+			productReference = 2887F2E4A4C98BEF767A166683622593 /* URLImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		67474A736AE298E52CAF4E2115364F37 /* JXBanner */ = {
@@ -3023,7 +3005,7 @@
 			);
 			name = JXBanner;
 			productName = JXBanner;
-			productReference = 539E59013E652C004A42E94F4B1A00DB /* JXBanner */;
+			productReference = 539E59013E652C004A42E94F4B1A00DB /* JXBanner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7EDD561B01B453B33504B0EACB2107CC /* SwiftUIPager */ = {
@@ -3059,7 +3041,7 @@
 			);
 			name = EARestrictedScrollView;
 			productName = EARestrictedScrollView;
-			productReference = 9F993663B3367094F9B371817504B205 /* EARestrictedScrollView */;
+			productReference = 9F993663B3367094F9B371817504B205 /* EARestrictedScrollView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		93789445511E3FEAB3D09A6F552EEE2D /* SwiftMessages-SwiftMessages */ = {
@@ -3130,7 +3112,7 @@
 			);
 			name = Instructions;
 			productName = Instructions;
-			productReference = 1C22078EBCD4EA2D0BEA63674BE8FBF0 /* Instructions */;
+			productReference = 1C22078EBCD4EA2D0BEA63674BE8FBF0 /* Instructions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		97E3685499568DCCBA6C15905F707BDC /* Introspect */ = {
@@ -3148,7 +3130,7 @@
 			);
 			name = Introspect;
 			productName = Introspect;
-			productReference = D0A70003FD5E49B30CA83DAAFE03116B /* Introspect */;
+			productReference = D0A70003FD5E49B30CA83DAAFE03116B /* Introspect.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A049F3164EBC335A7982A4E1FB3A5EAA /* SwiftyUserDefaults */ = {
@@ -3166,7 +3148,7 @@
 			);
 			name = SwiftyUserDefaults;
 			productName = SwiftyUserDefaults;
-			productReference = B7715718A7E1E513F9BC2E99B977FCA9 /* SwiftyUserDefaults */;
+			productReference = B7715718A7E1E513F9BC2E99B977FCA9 /* SwiftyUserDefaults.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A4C88C2A40F178CFDA25F6F1E2C779D8 /* JXPageControl */ = {
@@ -3184,7 +3166,7 @@
 			);
 			name = JXPageControl;
 			productName = JXPageControl;
-			productReference = 638D0F280C9623606B5CCC57D553565D /* JXPageControl */;
+			productReference = 638D0F280C9623606B5CCC57D553565D /* JXPageControl.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */ = {
@@ -3239,7 +3221,7 @@
 			);
 			name = SDCycleScrollView;
 			productName = SDCycleScrollView;
-			productReference = 8B6CF5C20C32EE9F7F0862FF892524DE /* SDCycleScrollView */;
+			productReference = 8B6CF5C20C32EE9F7F0862FF892524DE /* SDCycleScrollView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CC5D5F25300964D7791790EA262460A0 /* EAIntroView */ = {
@@ -3258,7 +3240,7 @@
 			);
 			name = EAIntroView;
 			productName = EAIntroView;
-			productReference = F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView */;
+			productReference = F8A3EF4E024804A993CEA573A33CD02E /* EAIntroView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DAB613A18652334F6BFC5F27BADF515D /* SwiftMessages */ = {
@@ -3314,7 +3296,7 @@
 			);
 			name = SCLAlertView;
 			productName = SCLAlertView;
-			productReference = 962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView */;
+			productReference = 962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
@@ -4267,7 +4249,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Introspect/Introspect-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Introspect/Introspect-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4302,7 +4284,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/JXBanner/JXBanner-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JXBanner/JXBanner-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4337,7 +4319,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Instructions/Instructions-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Instructions/Instructions-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4405,7 +4387,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4439,7 +4421,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SDCycleScrollView/SDCycleScrollView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SDCycleScrollView/SDCycleScrollView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4508,7 +4490,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4542,7 +4524,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4766,7 +4748,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyUserDefaults/SwiftyUserDefaults-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4801,7 +4783,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EARestrictedScrollView/EARestrictedScrollView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4836,7 +4818,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CountdownLabel/CountdownLabel-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CountdownLabel/CountdownLabel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4871,7 +4853,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HandyJSON/HandyJSON-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HandyJSON/HandyJSON-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4978,7 +4960,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SDWebImage/SDWebImage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5013,7 +4995,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EAIntroView/EAIntroView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EAIntroView/EAIntroView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5110,7 +5092,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SDWebImage/SDWebImage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5144,7 +5126,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Instructions/Instructions-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Instructions/Instructions-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5179,7 +5161,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/JXBanner/JXBanner-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JXBanner/JXBanner-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5213,7 +5195,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SCLAlertView/SCLAlertView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5247,7 +5229,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/JXPageControl/JXPageControl-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JXPageControl/JXPageControl-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5282,7 +5264,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EAIntroView/EAIntroView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EAIntroView/EAIntroView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5316,7 +5298,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/JXPageControl/JXPageControl-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JXPageControl/JXPageControl-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5351,7 +5333,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Introspect/Introspect-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Introspect/Introspect-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5422,7 +5404,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/URLImage/URLImage-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/URLImage/URLImage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5509,7 +5491,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SCLAlertView/SCLAlertView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5579,7 +5561,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SDCycleScrollView/SDCycleScrollView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SDCycleScrollView/SDCycleScrollView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5650,7 +5632,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/URLImage/URLImage-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/URLImage/URLImage-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -5722,7 +5704,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HandyJSON/HandyJSON-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HandyJSON/HandyJSON-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -40,6 +40,14 @@ public let HexRGBAlpha:((Int,Float) ->UIColor) = { (rgbValue :Int, alpha :Float)
 
 }
 
+public let HexRGBA:((Int) ->Color) = { (rgbValue :Int) ->Color in
+
+    return Color(red:CGFloat(CGFloat((rgbValue & 0xFF0000) >> 16)/255), green:CGFloat(CGFloat((rgbValue & 0xFF00) >> 8)/255), blue:CGFloat(CGFloat(rgbValue & 0xFF)/255))
+
+}
+
+//let bgColor = Color(red: 0.9, green: 0.9, blue: 0.9)
+let bgColor = HexRGBA(0xf7f7f7)
 
 
 let ScreenH = UIScreen.main.bounds.height

@@ -35,7 +35,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        var hView = HomeView(isCurrentPage: $isCurrentPage)
+        let hView = HomeView(isCurrentPage: $isCurrentPage)
          let cView = CategoryView(isCurrentPage: $isCurrentPage)
          let cartV = CartView(isCurrentPage: $isCurrentPage)
          let mView = MineView(isCurrentPage: $isCurrentPage)
@@ -121,7 +121,7 @@ struct ContentView: View {
                                 Spacer()
                             }
                             .padding(.bottom) // 将标签栏放在底部
-                            .frame(height: 50) // 设置标签栏的高度a
+                            .frame(height: 60) // 设置标签栏的高度a
                         }
                     }
                 }

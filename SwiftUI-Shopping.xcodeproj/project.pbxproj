@@ -31,6 +31,10 @@
 		14C580762C2D43CE0012993F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580752C2D43CE0012993F /* HomeViewController.swift */; };
 		14C580782C2D4B780012993F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580772C2D4B780012993F /* HomeView.swift */; };
 		14C5807A2C2D69F40012993F /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580792C2D69F40012993F /* CategoryView.swift */; };
+		14E9AEFC2C3247E6008B872E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 14E9AEFB2C3247E6008B872E /* ACarousel */; };
+		14E9AEFE2C324988008B872E /* TopSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9AEFD2C324988008B872E /* TopSearchView.swift */; };
+		14E9AF002C324DFC008B872E /* SearchHistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9AEFF2C324DFC008B872E /* SearchHistoryListView.swift */; };
+		14E9AF022C327CEA008B872E /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E9AF012C327CEA008B872E /* CategoryModel.swift */; };
 		8BA7994F2C2F9F87005EB744 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA7994E2C2F9F87005EB744 /* Launch Screen.storyboard */; };
 		8BB44A5C2C2FF6DA00B164AC /* GoodsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB44A5B2C2FF6DA00B164AC /* GoodsListView.swift */; };
 		8BB44A5E2C2FF91C00B164AC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB44A5D2C2FF91C00B164AC /* LoadingView.swift */; };
@@ -66,6 +70,9 @@
 		14C580752C2D43CE0012993F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		14C580772C2D4B780012993F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		14C580792C2D69F40012993F /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		14E9AEFD2C324988008B872E /* TopSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSearchView.swift; sourceTree = "<group>"; };
+		14E9AEFF2C324DFC008B872E /* SearchHistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryListView.swift; sourceTree = "<group>"; };
+		14E9AF012C327CEA008B872E /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		5363C27FA16B4439342B848A /* Pods-SwiftUI-Shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Shopping.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Shopping/Pods-SwiftUI-Shopping.debug.xcconfig"; sourceTree = "<group>"; };
 		8BA7994E2C2F9F87005EB744 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		8BB44A5B2C2FF6DA00B164AC /* GoodsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoodsListView.swift; path = "SwiftUI-Shopping/GoodsListView.swift"; sourceTree = SOURCE_ROOT; };
@@ -82,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BDDBAC22C30BBB0004BA826 /* ACarousel in Frameworks */,
+				14E9AEFC2C3247E6008B872E /* ACarousel in Frameworks */,
 				BA93BAF65DE712EBA11F07AA /* Pods_SwiftUI_Shopping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +196,7 @@
 				14C580752C2D43CE0012993F /* HomeViewController.swift */,
 				14C580772C2D4B780012993F /* HomeView.swift */,
 				8BB44A5F2C3004F300B164AC /* GoodsDetailPageView.swift */,
+				14E9AEFF2C324DFC008B872E /* SearchHistoryListView.swift */,
 			);
 			path = Ctrl;
 			sourceTree = "<group>";
@@ -211,6 +220,7 @@
 				8BB44A5B2C2FF6DA00B164AC /* GoodsListView.swift */,
 				8BB44A5D2C2FF91C00B164AC /* LoadingView.swift */,
 				8BDDBABE2C30AFCC004BA826 /* BannerView.swift */,
+				14E9AEFD2C324988008B872E /* TopSearchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +246,7 @@
 		14C5806B2C2D43AA0012993F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				14E9AF012C327CEA008B872E /* CategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,6 +359,7 @@
 			name = "SwiftUI-Shopping";
 			packageProductDependencies = (
 				8BDDBAC12C30BBB0004BA826 /* ACarousel */,
+				14E9AEFB2C3247E6008B872E /* ACarousel */,
 			);
 			productName = "SwiftUI-Shopping";
 			productReference = 14C5804E2C2D40580012993F /* SwiftUI-Shopping.app */;
@@ -454,15 +466,18 @@
 				14867C682C2EA4B60093472D /* LNNetworkConfiguration.swift in Sources */,
 				14867C5A2C2E59DF0093472D /* CartView.swift in Sources */,
 				14867C742C2EA5350093472D /* UIDevice+K_Addition.swift in Sources */,
+				14E9AEFE2C324988008B872E /* TopSearchView.swift in Sources */,
 				8BB44A5E2C2FF91C00B164AC /* LoadingView.swift in Sources */,
 				14C580762C2D43CE0012993F /* HomeViewController.swift in Sources */,
 				14C5807A2C2D69F40012993F /* CategoryView.swift in Sources */,
+				14E9AF002C324DFC008B872E /* SearchHistoryListView.swift in Sources */,
 				14867C5C2C2E61AB0093472D /* TabBarController.swift in Sources */,
 				14867C692C2EA4B60093472D /* LNNetworkManager.swift in Sources */,
 				14867C6A2C2EA4B60093472D /* LNBaseRequest.swift in Sources */,
 				14C5805B2C2D405A0012993F /* Persistence.swift in Sources */,
 				14867C6E2C2EA4E60093472D /* HomeModel.swift in Sources */,
 				14C580542C2D40580012993F /* ContentView.swift in Sources */,
+				14E9AF022C327CEA008B872E /* CategoryModel.swift in Sources */,
 				14C580782C2D4B780012993F /* HomeView.swift in Sources */,
 				14867C6F2C2EA4E60093472D /* GoodsListModel.swift in Sources */,
 				14867C772C2EB2A40093472D /* WebImageView.swift in Sources */,
@@ -705,6 +720,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		14E9AEFB2C3247E6008B872E /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BDDBAC02C30BBB0004BA826 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
+		};
 		8BDDBAC12C30BBB0004BA826 /* ACarousel */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8BDDBAC02C30BBB0004BA826 /* XCRemoteSwiftPackageReference "ACarousel" */;
