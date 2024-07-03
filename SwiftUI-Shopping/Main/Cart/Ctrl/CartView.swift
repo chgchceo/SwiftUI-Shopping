@@ -116,6 +116,7 @@ struct MiddleView:View {
                                     .padding(10)
                                     .frame(width: 200,alignment: .leading)
                                     .lineLimit(4)
+                                    .font(.system(size: 14))
                                 
                                 HStack{
                                     
