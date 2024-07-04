@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ToastUI
 
 struct LoginPageView: View {
     
@@ -109,6 +110,7 @@ struct LoginPageView: View {
                 
             }
             ToastView(isVisible: $isShowToast, message: message)
+            
         }
         
         .onAppear(){
@@ -187,16 +189,16 @@ struct LoginPageView: View {
             isShowToast = true
             return
         }
-        let param = [
-            "form":[
-            "isParty":false,
-            "partyData":[:],
-            "smsCode":smsCode,
-            "mobile":phoneNum
-        ]]
+//        let param = [
+//            "form":[
+//            "isParty":false,
+//            "partyData":[:],
+//            "smsCode":smsCode,
+//            "mobile":phoneNum
+//        ]]
         
         
-        var semaphore = DispatchSemaphore (value: 0)
+        let semaphore = DispatchSemaphore (value: 0)
 
         let parameters = "{\r\n    \"form\": {\r\n        \"smsCode\": \"\(smsCode)\",\r\n        \"mobile\": \"\(phoneNum)\",\r\n        \"isParty\": false,\r\n        \"partyData\": {}\r\n    }\r\n}"
         let postData = parameters.data(using: .utf8)

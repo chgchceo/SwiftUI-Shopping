@@ -1,8 +1,10 @@
 import SwiftUI
+import URLImage
 import SwiftUIRefresh // 导入 SwiftUIRefresh 库
   
 struct CartView: View {
     
+    @State var data:[CartDetailData]?
     @Binding var isCurrentPage:Bool
     
     @State private var items = ["Item 1", "Item 2", "Item 3","Item 1", "Item 2", "Item 3"]
@@ -21,9 +23,15 @@ struct CartView: View {
                 VStack{
                     
                         
-                        MiddleView()
-                        MiddleView()
-                        MiddleView()
+                    if let data = self.data{
+                        
+                        ForEach(data) { detail in
+                            
+                            MiddleView(detail: detail)
+                            
+                        }
+                    }
+                        
                     }
                 }
                     .frame(height: ScreenHeight-TabBarHeight-NavigationBarHeight-90-BottomSafeHeight)
@@ -53,11 +61,24 @@ struct CartView: View {
             
             self.isCurrentPage = true
             //加载网络数据
+            self.initData()
             
         }
         .onDisappear(){
             
             
+        }
+    }
+    
+    func initData() -> Void {
+        
+        LNRequest.get(path: "https://smart-shop.itheima.net/index.php?s=/api/cart/list") { request, responseData in
+            
+          let model =  CartListModel.deserialize(from: responseData as! Dictionary<String, Any> as Dictionary)
+            if model?.status == 200{
+                
+                self.data = model?.data?.list
+            }
         }
     }
 }
@@ -92,6 +113,8 @@ struct TopView:View {
 
 struct MiddleView:View {
     
+    var detail:CartDetailData?
+    
     var body: some View{
         
         ZStack{
@@ -103,17 +126,29 @@ struct MiddleView:View {
                                 .foregroundColor(.blue)
                                 .padding(.leading,5)
                                 .font(.system(size: 20))
+                
+                URLImage(URL(string: (detail?.goods!.goods_image)!)!){ image in
+                    
+                    image
+                        .image.resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 120,height: 120)
+                        .cornerRadius(20)
+                        .clipped()
+                        .padding(.vertical,20)
+                }
+
                                         
-                            Image("banner1")
-                                .frame(width: 120,height: 120)
-                                .aspectRatio(contentMode: .fit)
-                                .cornerRadius(20)
-                                .clipped()
-                                .padding(.vertical,20)
+//                            Image("banner1")
+//                                .frame(width: 120,height: 120)
+//                                .aspectRatio(contentMode: .fit)
+//                                .cornerRadius(20)
+//                                .clipped()
+//                                .padding(.vertical,20)
                 
                             VStack{
                                 
-                                Text("商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称")
+                                Text((detail?.goods!.goods_name)!)
                                     .padding(10)
                                     .frame(width: 200,alignment: .leading)
                                     .lineLimit(4)
@@ -121,14 +156,14 @@ struct MiddleView:View {
                                 
                                 HStack{
                                     
-                                    Text("¥9999.00")
+                                    Text((detail?.goods!.goods_price_min)!)
                                         .foregroundColor(.red)
                                     
                                     Text("-")
                                     
                                     .frame(width: 20,height: 30)
                                     .background(bgColor)
-                                    Text("0")
+                                    Text(detail!.goods_num)
                                         .frame(width: 40,height: 30)
                                         .background(bgColor)
                                         .padding(.horizontal,1)

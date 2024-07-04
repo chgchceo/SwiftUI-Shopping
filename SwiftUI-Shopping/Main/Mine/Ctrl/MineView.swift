@@ -40,29 +40,32 @@ struct MineView: View {
                         MineOrderView()
                         MineBottomView()
                         
-                        Button(action: {}, label: {
-                            
-                            ZStack{
+                        if isLogin {
+                            Button(action: {}, label: {
                                 
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color.gray, lineWidth: 1) // 设置边框颜色和宽度
-                                    .foregroundColor(Color.white)
-                                    .frame(width: 280,height: 40)
-                                    .background(Color.white)
-                                    .cornerRadius(20)
-                                    .padding(.top,10)
+                                ZStack{
+                                    
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color.gray, lineWidth: 1) // 设置边框颜色和宽度
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 280,height: 40)
+                                        .background(Color.white)
+                                        .cornerRadius(20)
+                                        .padding(.top,10)
+                                    
+                                    Text("退出登录")
+                                        .foregroundColor(Color.black)
+                                        .padding(.top,10)
+                                }
                                 
-                                Text("退出登录")
-                                    .foregroundColor(Color.black)
-                                    .padding(.top,10)
-                            }
-                            
-                        })
+                            })
+                        }
                     }
                     
                 }
-                .navigationBarHidden(true)
                 .navigationTitle("个人中心")
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarHidden(true)
                 .frame(width: ScreenWidth,height: ScreenHeight-60-TopSafeHeight-BottomSafeHeight)
                 .onAppear(){
                     
