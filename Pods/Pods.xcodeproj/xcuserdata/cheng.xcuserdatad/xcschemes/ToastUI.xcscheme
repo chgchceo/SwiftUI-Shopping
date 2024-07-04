@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "94CFBA7D633ECA58DF85C327B035E6A3"
-               BuildableName = "SDWebImage.bundle"
-               BlueprintName = "SDWebImage-SDWebImage"
+               BlueprintIdentifier = "160736F1D0D3BA98FDF240BE158C1406"
+               BuildableName = "ToastUI.framework"
+               BlueprintName = "ToastUI"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

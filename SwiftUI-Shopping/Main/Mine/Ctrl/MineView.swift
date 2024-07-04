@@ -5,6 +5,8 @@ import SwiftUI
 
 struct MineView: View {
     
+    @State var isLogin = false
+    
     @Binding var isCurrentPage:Bool
     @State var isPushDetail = false
     @State var isRefresh = false
@@ -29,7 +31,7 @@ struct MineView: View {
                         
                         NavigationLink(destination: LoginPageView(), isActive: $isPushDetail){
                         }
-                        MineTopView()
+                        MineTopView(isLogin: isLogin)
                             .onTapGesture {
                                 self.isCurrentPage = false
                                 self.isPushDetail = true
@@ -68,6 +70,14 @@ struct MineView: View {
                     //加载网络数据
                     self.loadData()
                     
+                    //判断是否登录
+                    let token:String = (UserDefaults.standard.object(forKey: "token") as? String) ?? ""
+                    
+                    if token.count > 0{
+                        
+                        isLogin = true
+                    }
+                    
                 }
                 .onDisappear(){
                     
@@ -89,6 +99,9 @@ struct MineView: View {
 
 struct MineTopView:View {
     
+    var isLogin:Bool = false
+    var userId:String = (UserDefaults.standard.object(forKey: "userId") as? String) ?? ""
+    
     var body: some View{
         
         HStack {
@@ -100,17 +113,51 @@ struct MineTopView:View {
                 .cornerRadius(40)
                 .padding(.leading,20)
                 .padding(.trailing,5)
-            VStack {
-                Text("未登录")
-                    .frame(width: 200,alignment: .leading)
-                    .foregroundColor(HexRGBA(0xc59a46))
-                    .font(.system(size: 18).bold())
-                    .padding(.bottom,5)
-                Text("点击账号登录")
-                    .frame(width: 200,alignment: .leading)
-                    .padding(.bottom,5)
-                    .font(.system(size: 15))
+            Group(){
+                
+                if isLogin{
+                    VStack {
+                        Text(userId)
+                            .frame(width: 100,alignment: .leading)
+                            .foregroundColor(HexRGBA(0xc59a46))
+                            .font(.system(size: 18).bold())
+                            .padding(.bottom,5)
+                            
+                        
+                        HStack{
+                            Image(systemName: "person.2.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 13))
+                            
+                            Text("普通会员")
+                                .font(.system(size: 13))
+                                .foregroundColor(.white)
+                            
+                            Spacer()
+                        }
+                        .padding(.leading ,10)
+                        .frame(width: 100,height: 25,alignment: .leading)
+                        .background(HexRGBA(0x3c3c3c))
+                        .cornerRadius(20)
+                        .padding(.bottom,3)
+                    }
+                    .frame(width: ScreenWidth-80,alignment: .leading)
+                }else{
+                    VStack {
+                        Text("未登录")
+                            .frame(width: 200,alignment: .leading)
+                            .foregroundColor(HexRGBA(0xc59a46))
+                            .font(.system(size: 18).bold())
+                            .padding(.bottom,5)
+                        Text("点击账号登录")
+                            .frame(width: 200,alignment: .leading)
+                            .padding(.bottom,5)
+                            .font(.system(size: 15))
+                    }
+                }
             }
+            
+            
             Spacer()
             
         }

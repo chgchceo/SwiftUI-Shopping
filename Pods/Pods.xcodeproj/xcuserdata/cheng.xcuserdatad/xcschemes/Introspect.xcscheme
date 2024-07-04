@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6868056D761E163D10FDAF8CF1C4D9B8"
-               BuildableName = "MJRefresh.framework"
-               BlueprintName = "MJRefresh"
+               BlueprintIdentifier = "97E3685499568DCCBA6C15905F707BDC"
+               BuildableName = "Introspect.framework"
+               BlueprintName = "Introspect"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B26054DF1DEA11585A231AF6D1D80D5E"
-               BuildableName = "MJRefresh.Privacy.bundle"
-               BlueprintName = "MJRefresh-MJRefresh.Privacy"
+               BlueprintIdentifier = "7EDD561B01B453B33504B0EACB2107CC"
+               BuildableName = "SwiftUIPager.framework"
+               BlueprintName = "SwiftUIPager"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
