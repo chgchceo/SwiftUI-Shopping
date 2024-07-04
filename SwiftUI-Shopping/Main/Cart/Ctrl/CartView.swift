@@ -102,6 +102,7 @@ struct MiddleView:View {
                             Image(systemName: "checkmark.circle.fill")
                                 .foregroundColor(.blue)
                                 .padding(.leading,5)
+                                .font(.system(size: 20))
                                         
                             Image("banner1")
                                 .frame(width: 120,height: 120)
@@ -157,11 +158,28 @@ struct BottomView:View {
                 
                 Button(action: {}, label: {
                     Image(systemName: "checkmark.circle.fill")
-                        .foregroundColor(Color.green)
+                        .foregroundColor(Color.blue)
+                        .font(.system(size: 20))
                     Text("全选")
                     
                     Spacer()
                 })
+                .padding(.leading,15)
+                Spacer()
+                Text("合计：¥")
+                
+                Text("9999.00")
+                    .foregroundColor(.red)
+                
+                Button(action: {}, label: {
+                    Text("结算(5)")
+                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,height: 36)
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(18)
+                    
+                })
+                .padding(.trailing,15)
             }
             
         }
@@ -180,3 +198,4 @@ struct ThickDivider: View {
             .frame(height: thickness) // 设置分割线的厚度
     }
 }
+

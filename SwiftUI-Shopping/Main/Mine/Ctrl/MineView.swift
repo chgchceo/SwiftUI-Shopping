@@ -22,8 +22,38 @@ struct MineView: View {
                 .foregroundColor(bgColor)
                 .ignoresSafeArea(.all)
             
-            MineTopView()
+            VStack(){
+                
+                ScrollView{
+                    
+                    MineTopView()
+                    MineSecondView()
+                    MineOrderView()
+                    MineBottomView()
+                    
+                    Button(action: {}, label: {
+                        
+                        ZStack{
+                            
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.gray, lineWidth: 1) // 设置边框颜色和宽度
+                                .foregroundColor(Color.white)
+                                .frame(width: 280,height: 40)
+                                .background(Color.white)
+                                .cornerRadius(20)
+                                .padding(.top,10)
+                            
+                            Text("退出登录")
+                                .foregroundColor(Color.black)
+                                .padding(.top,10)
+                        }
+                        
+                    })
+                }
+                
+            }
         }
+        .frame(width: ScreenWidth,height: ScreenHeight-60-TopSafeHeight-BottomSafeHeight)
         .onAppear(){
             
             self.isCurrentPage = true
@@ -55,20 +85,178 @@ struct MineTopView:View {
             Image("banner1")
                 .resizable()
                 .aspectRatio( contentMode: .fill)
-                .frame(width: 80,height: 80)
+                .frame(width: 50,height: 50)
                 .cornerRadius(40)
-                .padding(20)
+                .padding(.leading,20)
+                .padding(.trailing,5)
             VStack {
-                
-                Text("去登录")
-                Text("hahahaha")
+//                Spacer()
+                Text("未登录")
+                    .frame(width: 200,alignment: .leading)
+                    .foregroundColor(HexRGBA(0xc59a46))
+                    .font(.system(size: 18).bold())
+                    .padding(.bottom,5)
+                Text("点击账号登录")
+                    .frame(width: 200,alignment: .leading)
+                    .padding(.bottom,5)
+                    .font(.system(size: 15))
+//                Spacer()
             }
             Spacer()
             
         }
-        .frame(width: ScreenWidth-40)
-        .cornerRadius(20)
+        .frame(height: 100)
+    }
+}
+
+//
+//struct MineView_Previews: PreviewProvider {
+//   
+//    
+//    static var previews: some View {
+//        MineView()
+//    }
+//}
+
+
+struct MineSecondView:View {
+    
+    var body: some View{
+        
+        HStack {
+
+            VStack {
+                Text("0")
+                    .frame(width: 60)
+                    .foregroundColor(Color.red)
+                    .font(.system(size: 18).bold())
+                    .padding(.bottom,5)
+                Text("账户余额")
+                    .frame(width: 70)
+                    .padding(.bottom,5)
+                    .font(.system(size: 15))
+            }
+            Spacer()
+            VStack {
+                Text("0")
+                    .frame(width: 60)
+                    .foregroundColor(Color.red)
+                    .font(.system(size: 18).bold())
+                    .padding(.bottom,5)
+                Text("积分")
+                    .frame(width: 70)
+                    .padding(.bottom,5)
+                    .font(.system(size: 15))
+            }
+            Spacer()
+            VStack {
+                Text("0")
+                    .frame(width: 60)
+                    .foregroundColor(Color.red)
+                    .font(.system(size: 18).bold())
+                    .padding(.bottom,5)
+                Text("优惠券")
+                    .frame(width: 70)
+                    .padding(.bottom,5)
+                    .font(.system(size: 15))
+            }
+            
+            Spacer()
+            VStack {
+                
+                MineItemView(imgName: "drop.circle.fill",name: "我的钱包")
+            }
+        }
+        .padding()
+        .frame(width: ScreenWidth,height: 90)
         .background(Color.white)
-        .padding(.horizontal,20)
+    }
+}
+
+
+struct MineOrderView:View {
+    
+    var body: some View{
+        
+        HStack {
+
+            VStack {
+                
+                MineItemView(imgName: "wallet.pass",name: "全部订单")
+            }
+            Spacer()
+            VStack {
+                
+                MineItemView(imgName: "timer",name: "待支付")
+            }
+            Spacer()
+            VStack {
+                
+               MineItemView(imgName: "box.truck.badge.clock",name: "待发货")
+            }
+            Spacer()
+            MineItemView(imgName:"square.and.arrow.up",name: "待收货")
+        }
+        .padding(.horizontal,10)
+        .frame(width: ScreenWidth-30,height: 80)
+        .background(Color.white)
+        .cornerRadius(10)
+        .padding(.top,5)
+    }
+}
+
+struct MineBottomView:View {
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
+    
+    let arr = ["收货地址","领券中心","优惠券","我的帮助","我的积分","退货/售后"]
+    var body: some View{
+        
+        VStack{
+           
+            Text("我的服务")
+                .font(.system(size: 20).bold())
+                .frame(width: ScreenWidth-60,alignment:.leading)
+            LazyVGrid(columns: columns) {
+                
+                
+                ForEach(arr,id: \.self) { name in
+                    MineItemView(imgName: "square.and.arrow.up",name: name,color: .red)
+                        .padding(.top,10)
+                }
+            }
+        }
+        .padding()
+        .frame(width: ScreenWidth-30)
+        .background(Color.white)
+        .cornerRadius(15)
+        .padding(.top,5)
+    }
+}
+
+
+struct MineItemView:View {
+    
+    var imgName:String?
+    var name:String?
+    var color:Color = Color.black
+    var body: some View{
+        
+        VStack {
+            
+            Image(systemName: imgName ?? "")
+                .frame(width: 60)
+                .font(.system(size: 18).bold())
+                .padding(.bottom,5)
+                .foregroundColor(color)
+            Text(name ?? "")
+                .frame(width: 70)
+                .padding(.bottom,5)
+                .font(.system(size: 15))
+        }
     }
 }

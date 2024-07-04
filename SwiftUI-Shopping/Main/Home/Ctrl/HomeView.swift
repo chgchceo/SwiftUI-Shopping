@@ -86,7 +86,7 @@ struct HomeView: View {
                                         
                                         VStack{
                                             Spacer()
-                                            URLImage(URL(string: detail.imgUrl ?? "")!, placeholder: Image("")){
+                                            URLImage(URL(string: detail.imgUrl ?? "")!, placeholder: Image("categood")){
                                                 
                                                 image in
                                                 
