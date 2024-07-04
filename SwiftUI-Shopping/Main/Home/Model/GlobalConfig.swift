@@ -32,6 +32,23 @@ public let RGBAlpa:((Float,Float,Float,Float) ->UIColor) = { (r:Float, g:Float, 
 
 }
 
+//json字符串转字典方法
+func stringToDictionary(jsonString: String) -> [String: Any]? {
+    if let data = jsonString.data(using: .utf8) {
+        do {
+            let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
+              
+            if let jsonDictionary = jsonResult as? [String: Any] {
+                return jsonDictionary
+            }
+        } catch let error as NSError {
+            print("解析错误: \(error.localizedDescription)")
+        }
+    }
+      
+    return nil
+}
+
 // 通过 十六进制与alpha来设置颜色值  HexRGBAlpha(0xe47833,1)
 
 public let HexRGBAlpha:((Int,Float) ->UIColor) = { (rgbValue :Int, alpha :Float) ->UIColor in

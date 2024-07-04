@@ -6,7 +6,7 @@ import SwiftUI
 struct MineView: View {
     
     @Binding var isCurrentPage:Bool
-    
+    @State var isPushDetail = false
     @State var isRefresh = false
     @State var isMore = false
     @State var isHasMore = true
@@ -15,56 +15,67 @@ struct MineView: View {
     
     var body: some View {
         
-       
-        ZStack{
+        NavigationView{
             
-            Rectangle()
-                .foregroundColor(bgColor)
-                .ignoresSafeArea(.all)
-            
-            VStack(){
+            ZStack{
                 
-                ScrollView{
+                Rectangle()
+                    .foregroundColor(bgColor)
+                    .ignoresSafeArea(.all)
+                
+                VStack(){
                     
-                    MineTopView()
-                    MineSecondView()
-                    MineOrderView()
-                    MineBottomView()
-                    
-                    Button(action: {}, label: {
+                    ScrollView{
                         
-                        ZStack{
-                            
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.gray, lineWidth: 1) // 设置边框颜色和宽度
-                                .foregroundColor(Color.white)
-                                .frame(width: 280,height: 40)
-                                .background(Color.white)
-                                .cornerRadius(20)
-                                .padding(.top,10)
-                            
-                            Text("退出登录")
-                                .foregroundColor(Color.black)
-                                .padding(.top,10)
+                        NavigationLink(destination: LoginPageView(), isActive: $isPushDetail){
                         }
+                        MineTopView()
+                            .onTapGesture {
+                                self.isCurrentPage = false
+                                self.isPushDetail = true
+                            }
+                        MineSecondView()
+                        MineOrderView()
+                        MineBottomView()
                         
-                    })
+                        Button(action: {}, label: {
+                            
+                            ZStack{
+                                
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.gray, lineWidth: 1) // 设置边框颜色和宽度
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 280,height: 40)
+                                    .background(Color.white)
+                                    .cornerRadius(20)
+                                    .padding(.top,10)
+                                
+                                Text("退出登录")
+                                    .foregroundColor(Color.black)
+                                    .padding(.top,10)
+                            }
+                            
+                        })
+                    }
+                    
                 }
-                
+                .navigationBarHidden(true)
+                .navigationTitle("个人中心")
+                .frame(width: ScreenWidth,height: ScreenHeight-60-TopSafeHeight-BottomSafeHeight)
+                .onAppear(){
+                    
+                    self.isCurrentPage = true
+                    //加载网络数据
+                    self.loadData()
+                    
+                }
+                .onDisappear(){
+                    
+                    
+                }
             }
         }
-        .frame(width: ScreenWidth,height: ScreenHeight-60-TopSafeHeight-BottomSafeHeight)
-        .onAppear(){
-            
-            self.isCurrentPage = true
-            //加载网络数据
-            self.loadData()
-            
-        }
-        .onDisappear(){
-            
-            
-        }
+        
     }
     
     func loadData(){
@@ -90,7 +101,6 @@ struct MineTopView:View {
                 .padding(.leading,20)
                 .padding(.trailing,5)
             VStack {
-//                Spacer()
                 Text("未登录")
                     .frame(width: 200,alignment: .leading)
                     .foregroundColor(HexRGBA(0xc59a46))
@@ -100,12 +110,11 @@ struct MineTopView:View {
                     .frame(width: 200,alignment: .leading)
                     .padding(.bottom,5)
                     .font(.system(size: 15))
-//                Spacer()
             }
             Spacer()
             
         }
-        .frame(height: 100)
+        .frame(width: ScreenWidth,height: 100)
     }
 }
 

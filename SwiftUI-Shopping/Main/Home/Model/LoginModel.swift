@@ -20,4 +20,8 @@ class ImgData:BaseModel{
     var base64:String = ""
     var key:String = ""
     var md5:String = ""
+    
+    
+    var userId:String = ""
+    var token:String = ""
 }
