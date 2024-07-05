@@ -4,6 +4,8 @@ import SwiftUIRefresh // 导入 SwiftUIRefresh 库
   
 struct CartView: View {
     
+    @EnvironmentObject var viewModel: ViewModel
+
     let changeTab:(Int) ->Void
     
     @State var data:[CartDetailData]?
@@ -17,7 +19,7 @@ struct CartView: View {
 
             VStack{
                 
-                if isLoginSucc(){//已登录状态
+                if isLoginSucc() && (self.data != nil && self.data!.count > 0){//已登录状态
                     VStack{
                     TopView()
                     ScrollView {
@@ -93,11 +95,19 @@ struct CartView: View {
             
             
         }
+        .onReceive(viewModel.$state, perform: { index in
+            
+            if index == "2"{
+                
+                initData()
+            }
+        })
+        
     }
     
     func initData() -> Void {
         
-        self.data = nil
+        
         LNRequest.get(path: "https://smart-shop.itheima.net/index.php?s=/api/cart/list") { request, responseData in
             
           let model =  CartListModel.deserialize(from: responseData as! Dictionary<String, Any> as Dictionary)

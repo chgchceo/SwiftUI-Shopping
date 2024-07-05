@@ -20,7 +20,8 @@ enum Tab: String, Identifiable {
   
 struct ContentView: View {
     
-    
+    @StateObject var viewModel = ViewModel()
+
     @State var shouldLoadView2 = false
     @State var shouldLoadView3 = false
     @State var shouldLoadView4 = false
@@ -30,7 +31,7 @@ struct ContentView: View {
     @State var op3 = 0.0
     @State var op4 = 0.0
     
-    @State private var selectedTab = Tab.home
+     @State private var selectedTab = Tab.home
       
     @State private var isCurrentPage = true
     
@@ -42,8 +43,6 @@ struct ContentView: View {
          let mView = MineView(isCurrentPage: $isCurrentPage)
         
         ZStack {
-            
-//            NavigationView{
                
                 VStack{
                     
@@ -64,6 +63,7 @@ struct ContentView: View {
                             
                             cartV
                             .opacity(op3)
+                            .environmentObject(viewModel)
                             
                         }
                         if(shouldLoadView4){
@@ -92,6 +92,7 @@ struct ContentView: View {
                                     op3 = 0.0
                                     op4 = 0.0
                                     selectedTab = Tab.home
+                                    viewModel.state = "0"
                                 }
                                 Spacer()
                                 TabButton(tab: Tab.profile, isSelected: selectedTab == Tab.profile) {
@@ -101,6 +102,7 @@ struct ContentView: View {
                                     op4 = 0.0
                                     shouldLoadView2 = true
                                     selectedTab = Tab.profile
+                                    viewModel.state = "1"
                                 }
                                 Spacer()
                                 TabButton(tab: Tab.settings, isSelected: selectedTab == Tab.settings) {
@@ -108,12 +110,10 @@ struct ContentView: View {
                                     op2 = 0.0
                                     op1 = 0.0
                                     op4 = 0.0
+                                    viewModel.state = "2"
                                     shouldLoadView3 = true
                                     selectedTab = Tab.settings
-                                    DispatchQueue.main.asyncAfter(deadline: .now()+2, execute: {
-                                        
-                                        cartV.initData()
-                                    })
+                                    
                                 }
                                 Spacer()
                                 TabButton(tab: Tab.mine, isSelected: selectedTab == Tab.mine) {
@@ -123,6 +123,7 @@ struct ContentView: View {
                                     op1 = 0.0
                                     shouldLoadView4 = true
                                     selectedTab = Tab.mine
+                                    viewModel.state = "3"
                                 }
                                 Spacer()
                             }
@@ -240,3 +241,8 @@ struct TabButton: View {
 //        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 //    }
 //}
+
+
+class ViewModel: ObservableObject {
+    @Published var state: String = "0"//tab 0，1，2，3
+}
