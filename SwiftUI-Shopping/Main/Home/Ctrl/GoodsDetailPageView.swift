@@ -105,12 +105,19 @@ struct GoodsDetailPageView: View {
                     //图片详细
                     
                     
-                    
+                    VStack{
+                        
+                    }
+                    .frame(height: 100)
+                    .background(Color.white)
                 }
+                .frame(width: ScreenWidth, height: ScreenHeight-NavigationBarHeight-BottomSafeHeight)
             }
             
             BottomFixView()
         }
+        .frame(width: ScreenWidth,height: ScreenHeight-NavigationBarHeight-BottomSafeHeight)
+        
         .navigationTitle("商品详情页")
         .onAppear(){
             
@@ -159,12 +166,44 @@ struct BottomFixView:View {
         
         VStack{
             Spacer()
-            HStack{
+            VStack{
+                Divider()
+                HStack{
+                    
+                    VStack{
+                        
+                        Image(systemName: "homekit")
+                            .font(.system(size: 12))
+                        Text("首页")
+                    }
+                    VStack{
+                        Image(systemName: "cart")
+                            .font(.system(size: 12))
+                        Text("购物车")
+                    }
+                    
+                    Button(action: {}, label: {
+                        Text("加入购物车")
+                            .frame(width: 120,height: 36)
+                            .background(Color.orange)
+                            .cornerRadius(18)
+                            .foregroundColor(.white)
+                        
+                    })
+                    Button(action: {}, label: {
+                        Text("立即购买")
+                            .frame(width: 120,height: 36)
+                            .background(Color.red)
+                            .cornerRadius(18)
+                            .foregroundColor(.white)
+                    })
+                    
+                }
+                .frame(width: ScreenWidth,height: 55)
                 
-                Text("hh")
+
             }
-            .frame(width: ScreenWidth,height: 55)
-            .background(Color.red)
+            .background(Color.white)
         }
     }
 }
