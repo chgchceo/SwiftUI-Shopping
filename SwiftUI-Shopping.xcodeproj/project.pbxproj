@@ -31,6 +31,9 @@
 		14C580762C2D43CE0012993F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580752C2D43CE0012993F /* HomeViewController.swift */; };
 		14C580782C2D4B780012993F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580772C2D4B780012993F /* HomeView.swift */; };
 		14C5807A2C2D69F40012993F /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C580792C2D69F40012993F /* CategoryView.swift */; };
+		14D3E9AD2C37BAFF0059393A /* GoodsDetailPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3E9AC2C37BAFF0059393A /* GoodsDetailPageModel.swift */; };
+		14D3E9AF2C37C5C10059393A /* GoodsDetailBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3E9AE2C37C5C10059393A /* GoodsDetailBannerView.swift */; };
+		14D3E9B12C37DC1B0059393A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3E9B02C37DC1B0059393A /* WebView.swift */; };
 		14DDE6CC2C36683300C37BC2 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DDE6CB2C36683300C37BC2 /* LoginPageView.swift */; };
 		14DDE6CE2C3684CC00C37BC2 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DDE6CD2C3684CC00C37BC2 /* ToastView.swift */; };
 		14E9AEFC2C3247E6008B872E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 14E9AEFB2C3247E6008B872E /* ACarousel */; };
@@ -73,6 +76,9 @@
 		14C580752C2D43CE0012993F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		14C580772C2D4B780012993F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		14C580792C2D69F40012993F /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		14D3E9AC2C37BAFF0059393A /* GoodsDetailPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailPageModel.swift; sourceTree = "<group>"; };
+		14D3E9AE2C37C5C10059393A /* GoodsDetailBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailBannerView.swift; sourceTree = "<group>"; };
+		14D3E9B02C37DC1B0059393A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		14DDE6CB2C36683300C37BC2 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		14DDE6CD2C3684CC00C37BC2 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		14E9AEFD2C324988008B872E /* TopSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSearchView.swift; sourceTree = "<group>"; };
@@ -215,6 +221,7 @@
 				14867C722C2EA5350093472D /* LoginModel.swift */,
 				14867C712C2EA5350093472D /* UIDevice+K_Addition.swift */,
 				14867C6D2C2EA4E50093472D /* GoodsListModel.swift */,
+				14D3E9AC2C37BAFF0059393A /* GoodsDetailPageModel.swift */,
 				14867C6C2C2EA4E50093472D /* HomeModel.swift */,
 			);
 			path = Model;
@@ -226,7 +233,9 @@
 				8BB44A5B2C2FF6DA00B164AC /* GoodsListView.swift */,
 				8BB44A5D2C2FF91C00B164AC /* LoadingView.swift */,
 				8BDDBABE2C30AFCC004BA826 /* BannerView.swift */,
+				14D3E9AE2C37C5C10059393A /* GoodsDetailBannerView.swift */,
 				14E9AEFD2C324988008B872E /* TopSearchView.swift */,
+				14D3E9B02C37DC1B0059393A /* WebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -474,7 +483,10 @@
 				14867C752C2EA5350093472D /* LoginModel.swift in Sources */,
 				14DDE6CE2C3684CC00C37BC2 /* ToastView.swift in Sources */,
 				14867C682C2EA4B60093472D /* LNNetworkConfiguration.swift in Sources */,
+				14D3E9AF2C37C5C10059393A /* GoodsDetailBannerView.swift in Sources */,
 				14867C5A2C2E59DF0093472D /* CartView.swift in Sources */,
+				14D3E9B12C37DC1B0059393A /* WebView.swift in Sources */,
+				14D3E9AD2C37BAFF0059393A /* GoodsDetailPageModel.swift in Sources */,
 				8BA02F7C2C36E501008B6969 /* CartListModel.swift in Sources */,
 				14867C742C2EA5350093472D /* UIDevice+K_Addition.swift in Sources */,
 				14E9AEFE2C324988008B872E /* TopSearchView.swift in Sources */,
