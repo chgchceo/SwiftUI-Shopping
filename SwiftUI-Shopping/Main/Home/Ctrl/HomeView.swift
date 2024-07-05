@@ -16,7 +16,8 @@ struct HomeView: View {
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-      
+    @State private var showAlert = false
+
     @Binding var isCurrentPage:Bool
     @State private var showDetail = false
     @State private var showSearchList = false
@@ -38,7 +39,9 @@ struct HomeView: View {
         NavigationView {
 
             ZStack{
-
+                
+                
+                
     //            //背景颜色
                 Rectangle()
                     .foregroundColor(Color(white: 0.9))
@@ -148,17 +151,22 @@ struct HomeView: View {
                         .navigationBarTitle("首页", displayMode: .inline)
                         .navigationBarItems(leading: Button(action: {
 
+                            self.showAlert = true
                             print("ss")
                         }, label: {
                             Text("搜索")
                                 .foregroundColor(.black)
                         }),trailing: Button(action: {
 
+                            self.showAlert = true
                             print("sz")
                         }, label: {
                             Text("设置")
                                 .foregroundColor(.red)
-                        }))
+                        })
+                            
+                        
+                        )
 
                 if isLoading {
 
@@ -166,6 +174,19 @@ struct HomeView: View {
                 }
 
             }
+            .alert(isPresented: $showAlert) {
+                       Alert(title: Text("温馨提示"), message: Text("你好，是否确定要退出登录")
+                             , primaryButton: .default(Text("确定")) {
+                           // 用户点击“确定”后执行的代码
+                           print("用户选择了退出登录")
+                           // 在这里可以添加退出登录的逻辑
+                           showAlert = false // 关闭警告框
+                       }, secondaryButton: .cancel(Text("取消")) {
+                           // 用户点击“取消”后执行的代码
+                           print("用户取消了退出登录")
+                           showAlert = false // 关闭警告框
+                       })
+                   }
             .onAppear(){
 
                 //加载网络数据
@@ -182,6 +203,9 @@ struct HomeView: View {
             }
 
         }
+//        .alert(isPresented: $showAlert) {
+//                   Alert(title: Text("Alert"), message: Text("This is an alert in NavigationView!"), dismissButton: .default(Text("OK")))
+//               }
     }
 
 

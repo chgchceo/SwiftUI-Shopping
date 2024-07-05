@@ -30,7 +30,7 @@ struct GoodsDetailPageView: View {
                     VStack{
                         
                         //banner
-                        if let data = self.bannerData{
+                        if self.bannerData != nil{
                             
                             GoodsDetailBannerView(imageUrls: self.bannerData)
                         }
@@ -78,7 +78,7 @@ struct GoodsDetailPageView: View {
                         
                         HStack{
                             
-                            Text("商品评价(\(self.total)条")
+                            Text("商品评价(\(self.total)条)")
                                 .font(.system(size: 16))
                                 .foregroundColor(.black)
                             Spacer()
@@ -102,9 +102,13 @@ struct GoodsDetailPageView: View {
                         }
                         
                     }
-                    //图片详细
                     
-                    
+                    if self.detail?.content.count ?? 0 > 0{
+                        
+                        //图片详细
+                        WebView(htmlStr:self.detail?.content ?? "")
+                            .frame(maxWidth: ScreenWidth,minHeight: ScreenHeight,maxHeight:20000)
+                    }
                     VStack{
                         
                     }

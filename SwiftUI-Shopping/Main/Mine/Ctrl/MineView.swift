@@ -6,7 +6,8 @@ import SwiftUI
 struct MineView: View {
     
     @State var isLogin = false
-    
+    @State private var showAlert = false
+
     @Binding var isCurrentPage:Bool
     @State var isPushDetail = false
     @State var isRefresh = false
@@ -43,9 +44,8 @@ struct MineView: View {
                         if isLogin {
                             Button(action: {
                                 
-                                UserDefaults.standard.set("", forKey: "userId")
-                                UserDefaults.standard.set("", forKey: "token")
-                                isLogin = false
+                                showAlert = true
+                                
                                 
                             }, label: {
                                 
@@ -63,11 +63,25 @@ struct MineView: View {
                                         .foregroundColor(Color.black)
                                         .padding(.top,10)
                                 }
-                                
+                                .alert(isPresented: $showAlert) {
+                                           Alert(title: Text("温馨提示"), message: Text("你好，是否确定要退出登录")
+                                                 , primaryButton: .default(Text("确定")) {
+                                               
+                                               UserDefaults.standard.set("", forKey: "userId")
+                                               UserDefaults.standard.set("", forKey: "token")
+                                               isLogin = false
+                                               print("用户选择了退出登录")
+                                               // 在这里可以添加退出登录的逻辑
+                                               showAlert = false // 关闭警告框
+                                           }, secondaryButton: .cancel(Text("取消")) {
+                                               // 用户点击“取消”后执行的代码
+                                               print("用户取消了退出登录")
+                                               showAlert = false // 关闭警告框
+                                           })
+                                       }
                             })
                         }
                     }
-                    
                 }
                 .navigationTitle("个人中心")
                 .navigationBarTitleDisplayMode(.inline)

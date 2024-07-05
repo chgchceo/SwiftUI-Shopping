@@ -9,7 +9,15 @@ import SwiftUI
 
 struct SearchHistoryListView: View {
     var body: some View {
-        Text("list")
-            .navigationTitle("搜索商品")
+        
+        VStack{
+            
+            WebView(url: URL(string: "https://www.baidu.com")!)
+                .frame(width: ScreenWidth, height: ScreenHeight)
+            
+        }
+        .navigationTitle("商品搜索")
+        
+        
     }
 }
