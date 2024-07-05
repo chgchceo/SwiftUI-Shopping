@@ -20,6 +20,7 @@ enum Tab: String, Identifiable {
   
 struct ContentView: View {
     
+    
     @State var shouldLoadView2 = false
     @State var shouldLoadView3 = false
     @State var shouldLoadView4 = false
@@ -37,7 +38,7 @@ struct ContentView: View {
         
         let hView = HomeView(isCurrentPage: $isCurrentPage)
          let cView = CategoryView(isCurrentPage: $isCurrentPage)
-         let cartV = CartView(isCurrentPage: $isCurrentPage)
+        let cartV = CartView(changeTab: changeTabNum, isCurrentPage: $isCurrentPage)
          let mView = MineView(isCurrentPage: $isCurrentPage)
         
         ZStack {
@@ -48,7 +49,6 @@ struct ContentView: View {
                     
                     ZStack{
                         
-                        
                         hView
                             .opacity(op1)
                         
@@ -58,11 +58,13 @@ struct ContentView: View {
                             cView
                             .opacity(op2)
                         }
+                        
+                        
                         if(shouldLoadView3){
-                            
                             
                             cartV
                             .opacity(op3)
+                            
                         }
                         if(shouldLoadView4){
                             
@@ -108,6 +110,10 @@ struct ContentView: View {
                                     op4 = 0.0
                                     shouldLoadView3 = true
                                     selectedTab = Tab.settings
+                                    DispatchQueue.main.asyncAfter(deadline: .now()+2, execute: {
+                                        
+                                        cartV.initData()
+                                    })
                                 }
                                 Spacer()
                                 TabButton(tab: Tab.mine, isSelected: selectedTab == Tab.mine) {
@@ -135,7 +141,51 @@ struct ContentView: View {
             
         }
     }
+    
+    
+    func changeTabNum(num:Int) -> Void {
+        
+        switch num {
+        case 0:
+            
+            op1 = 1.0
+            op2 = 0.0
+            op3 = 0.0
+            op4 = 0.0
+            selectedTab = Tab.home
+            
+        case 1:
+            
+            op2 = 1.0
+            op1 = 0.0
+            op3 = 0.0
+            op4 = 0.0
+            shouldLoadView2 = true
+            selectedTab = Tab.profile
+        case 2:
+            
+            op3 = 1.0
+            op2 = 0.0
+            op1 = 0.0
+            op4 = 0.0
+            shouldLoadView3 = true
+            selectedTab = Tab.settings
+        case 3:
+            
+            op4 = 1.0
+            op2 = 0.0
+            op3 = 0.0
+            op1 = 0.0
+            shouldLoadView4 = true
+            selectedTab = Tab.mine
+            
+        default:
+            print("没有了")
+        }
+    }
 }
+
+
   
 struct TabButton: View {
     let tab: Tab

@@ -41,7 +41,13 @@ struct MineView: View {
                         MineBottomView()
                         
                         if isLogin {
-                            Button(action: {}, label: {
+                            Button(action: {
+                                
+                                UserDefaults.standard.set("", forKey: "userId")
+                                UserDefaults.standard.set("", forKey: "token")
+                                isLogin = false
+                                
+                            }, label: {
                                 
                                 ZStack{
                                     
@@ -74,12 +80,7 @@ struct MineView: View {
                     self.loadData()
                     
                     //判断是否登录
-                    let token:String = (UserDefaults.standard.object(forKey: "token") as? String) ?? ""
-                    
-                    if token.count > 0{
-                        
-                        isLogin = true
-                    }
+                    isLogin = isLoginSucc()
                     
                 }
                 .onDisappear(){

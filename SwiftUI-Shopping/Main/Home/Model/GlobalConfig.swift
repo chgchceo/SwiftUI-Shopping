@@ -25,6 +25,17 @@ let TopSafeHeight = UIDevice.xp_safeDistanceTop()
 
 let BottomSafeHeight = UIDevice.xp_safeDistanceBottom()
 
+//是否登录
+func isLoginSucc() -> Bool {
+    
+    let token = (UserDefaults.standard.object(forKey: "token") as? String) ?? ""
+    
+    if token.count > 0{
+        
+        return true
+    }
+    return false
+}
 
 public let RGBAlpa:((Float,Float,Float,Float) ->UIColor) = { (r:Float, g:Float, b:Float, a:Float) ->UIColor in
 

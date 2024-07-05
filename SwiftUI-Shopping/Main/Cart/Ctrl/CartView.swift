@@ -4,6 +4,8 @@ import SwiftUIRefresh // 导入 SwiftUIRefresh 库
   
 struct CartView: View {
     
+    let changeTab:(Int) ->Void
+    
     @State var data:[CartDetailData]?
     @Binding var isCurrentPage:Bool
     
@@ -15,32 +17,57 @@ struct CartView: View {
 
             VStack{
                 
-                
-                TopView()
-                
-                
-                ScrollView {
-                VStack{
-                    
-                        
-                    if let data = self.data{
-                        
-                        ForEach(data) { detail in
+                if isLoginSucc(){//已登录状态
+                    VStack{
+                    TopView()
+                    ScrollView {
+                        VStack{
                             
-                            MiddleView(detail: detail)
-                            
+                            if let data = self.data{
+                                
+                                ForEach(data) { detail in
+                                    
+                                    MiddleView(detail: detail)
+                                }
+                            }
                         }
                     }
-                        
-                    }
-                }
                     .frame(height: ScreenHeight-TabBarHeight-NavigationBarHeight-90-BottomSafeHeight)
-                
-                BottomView()
-                ThickDivider(color: bgColor, thickness: 0.5)
+                    
+                    BottomView()
+                    ThickDivider(color: bgColor, thickness: 0.5)
+                    
+                }.background(bgColor)
+                }else {//未登录
+                    
+                    VStack{
+                        Image("empty")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 140,height: 92)
+                            
+                        
+                        Text("您的购物车空空如也，快去逛逛吧！")
+                            .padding(30)
+                            .foregroundColor(.gray)
+                        
+                        Button {
+                            
+                            changeTab(0)
+                        } label: {
+                            
+                            Text("去逛逛")
+                                .frame(width: 110,height:32)
+                                .background(Color.red)
+                                .foregroundColor(.white)
+                                .cornerRadius(16)
+                        }
+                    }
+                    .background(Color.white)
+                }
                 
             }
-            .background(bgColor)
+            
             .padding(0)
             .navigationBarTitle("购物车", displayMode: .inline)
                 .navigationBarItems(leading: Button(action: {
@@ -60,9 +87,7 @@ struct CartView: View {
         .onAppear(){
             
             self.isCurrentPage = true
-            //加载网络数据
-            self.initData()
-            
+            initData()
         }
         .onDisappear(){
             
@@ -72,6 +97,7 @@ struct CartView: View {
     
     func initData() -> Void {
         
+        self.data = nil
         LNRequest.get(path: "https://smart-shop.itheima.net/index.php?s=/api/cart/list") { request, responseData in
             
           let model =  CartListModel.deserialize(from: responseData as! Dictionary<String, Any> as Dictionary)
@@ -137,14 +163,6 @@ struct MiddleView:View {
                         .clipped()
                         .padding(.vertical,20)
                 }
-
-                                        
-//                            Image("banner1")
-//                                .frame(width: 120,height: 120)
-//                                .aspectRatio(contentMode: .fit)
-//                                .cornerRadius(20)
-//                                .clipped()
-//                                .padding(.vertical,20)
                 
                             VStack{
                                 
