@@ -173,15 +173,19 @@ struct BottomFixView:View {
                     VStack{
                         
                         Image(systemName: "homekit")
-                            .font(.system(size: 12))
+                            .font(.system(size: 16))
+                            
                         Text("首页")
+                            .font(.system(size: 16))
                     }
+                    .padding(.leading,8)
                     VStack{
                         Image(systemName: "cart")
-                            .font(.system(size: 12))
+                            .font(.system(size: 16))
                         Text("购物车")
+                            .font(.system(size: 16))
                     }
-                    
+                    Spacer()
                     Button(action: {}, label: {
                         Text("加入购物车")
                             .frame(width: 120,height: 36)
@@ -196,10 +200,12 @@ struct BottomFixView:View {
                             .background(Color.red)
                             .cornerRadius(18)
                             .foregroundColor(.white)
+                            .padding(.trailing,8)
                     })
                     
                 }
                 .frame(width: ScreenWidth,height: 55)
+                
                 
 
             }
