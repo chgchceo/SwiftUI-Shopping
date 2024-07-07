@@ -53,14 +53,14 @@ struct BannerView:View {
             self.showDetail = true
             print("\(currentPage)")
         }
-        NavigationLink(destination: GoodsDetailPageView(),isActive: $showDetail){
-            if #available(iOS 16.0, *) {
-                EmptyView()
-                    .backgroundStyle(.red)
-            } else {
-                // Fallback on earlier versions
-            }
-        }
+//        NavigationLink(destination: GoodsDetailPageView(),isActive: $showDetail){
+//            if #available(iOS 16.0, *) {
+//                EmptyView()
+//                    .backgroundStyle(.red)
+//            } else {
+//                // Fallback on earlier versions
+//            }
+//        }
     }
 }
 

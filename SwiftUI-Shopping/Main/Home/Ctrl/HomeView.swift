@@ -16,10 +16,12 @@ struct HomeView: View {
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
+    
+    @State var goodsId = ""
     @State private var showAlert = false
 
     @Binding var isCurrentPage:Bool
-    @State private var showDetail = false
+    @State private var showDetail1 = false
     @State private var showSearchList = false
 
     @State var page:Int = 1 //页数
@@ -126,12 +128,13 @@ struct HomeView: View {
                                                 //收起键盘，防止意外情况
                                                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
 
+                                                self.goodsId = detail.goods_id ?? ""
                                                 self.isCurrentPage = false
 
-                                                self.showDetail = true
+                                                self.showDetail1 = true
                                     }
 
-                                    NavigationLink(destination: GoodsDetailPageView(goodsId: detail.goods_id ?? ""),isActive: $showDetail){
+                                    NavigationLink(destination: GoodsDetailPageView(showDetail2: $showDetail1, goodsId: self.goodsId),isActive: $showDetail1){
                                         if #available(iOS 16.0, *) {
                                             EmptyView()
                                                 .backgroundStyle(.red)

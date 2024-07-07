@@ -10,6 +10,9 @@ import URLImage
 
 struct GoodsDetailPageView: View {
     
+    
+    @Binding var showDetail2:Bool
+
      var goodsId:String = ""
     
     @State var detail:GoodsDetailData?
@@ -85,8 +88,10 @@ struct GoodsDetailPageView: View {
                             HStack{
                                 
                                 Text("查看更多")
+                                    
                                 Image(systemName: "chevron.forward")
                                     .padding(.trailing,10)
+                                
                             }
                             .foregroundColor(.gray)
                         }
@@ -118,7 +123,7 @@ struct GoodsDetailPageView: View {
                 .frame(width: ScreenWidth, height: ScreenHeight-NavigationBarHeight-BottomSafeHeight)
             }
             
-            BottomFixView()
+            BottomFixView(showDe: $showDetail2)
         }
         .frame(width: ScreenWidth,height: ScreenHeight-NavigationBarHeight-BottomSafeHeight)
         
@@ -166,6 +171,9 @@ struct GoodsDetailPageView: View {
 //底部固定视图
 struct BottomFixView:View {
     
+    @Binding var showDe:Bool
+
+    @State private var isPresented = false
     var body: some View{
         
         VStack{
@@ -182,6 +190,10 @@ struct BottomFixView:View {
                         Text("首页")
                             .font(.system(size: 16))
                     }
+                    .onTapGesture {
+                        
+                        showDe = false
+                    }
                     .padding(.leading,8)
                     VStack{
                         Image(systemName: "cart")
@@ -190,7 +202,11 @@ struct BottomFixView:View {
                             .font(.system(size: 16))
                     }
                     Spacer()
-                    Button(action: {}, label: {
+                    Button(action: {
+                        
+                        isPresented = true
+                        
+                    }, label: {
                         Text("加入购物车")
                             .frame(width: 120,height: 36)
                             .background(Color.orange)
@@ -198,7 +214,45 @@ struct BottomFixView:View {
                             .foregroundColor(.white)
                         
                     })
-                    Button(action: {}, label: {
+                    .fullScreenCover(isPresented: $isPresented, content: {
+                        
+                        VStack{
+                            Text("这是一个模态视图！")
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                            
+                            Button {
+                                
+                                isPresented = false
+                            } label: {
+                                
+                                Text("关闭")
+                            }
+                        }
+                        .background(Color.red)
+                    }
+                    )
+//                    .sheet(isPresented: $isPresented) {
+//                               // 这里定义要展示的模态视图
+//                               Text("这是一个模态视图！")
+//                                   .padding()
+//                                   .background(Color.blue)
+//                                   .foregroundColor(.white)
+//                                   .cornerRadius(10)
+//                                   // 可以在这里添加按钮或操作来关闭模态视图
+////                                   button(action: {
+////                                       // 关闭模态视图
+////                                       isPresented = false
+////                                   }) {
+////                                       Text("关闭")
+////                                   }
+//                           }
+                    Button(action: {
+                        
+                        
+                    }, label: {
                         Text("立即购买")
                             .frame(width: 120,height: 36)
                             .background(Color.red)
@@ -256,3 +310,59 @@ struct CommentListView:View {
         
     }
 }
+
+
+//{
+//
+//    @State private var isPresented = false
+//
+//       var body: some View {
+//           ZStack {
+//               // 背景视图，可以是你的主视图或其他内容
+//               Color.green.edgesIgnoringSafeArea(.all)
+//               // 按钮用于触发弹出视图
+//               Button("显示弹出视图") {
+//                   isPresented = true
+//               }
+//               .padding()
+//
+//               Text("hehe")
+//                   .frame(width: ScreenWidth)
+//                   .multilineTextAlignment(.leading)
+//                   .background(Color.red)
+//
+//               // 弹出视图，这里使用了一个简单的VStack作为示例
+//               if isPresented {
+//                   VStack {
+//
+//                       Text("这是一个从底部弹出的视图")
+//                           .padding()
+//                           .background(Color.blue)
+//                           .cornerRadius(10)
+//                           .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 10)
+//
+//                       Spacer()
+//
+//                       Button("关闭") {
+//                           isPresented = false
+//                       }
+//                       .padding()
+//                       .background(Color.red)
+//                       .foregroundColor(.white)
+//                   }
+//                   .frame(width: ScreenWidth)
+//                   .background(Color.gray.opacity(0.9))
+//
+//                   .ignoresSafeArea(.all)
+//                   .frame(maxWidth: .infinity, maxHeight: ScreenHeight)
+//                   .background(Color.clear) // 自定义背景透明度
+//                   .transition(.move(edge: .bottom)) // 动画效果
+//                   .offset(y: isPresented ? 0 : UIScreen.main.bounds.height) // 初始位置在屏幕外
+//                   .animation(.spring(response: 0.5, dampingFraction: 0.8, blendDuration: 0.2))
+//               }
+//
+//
+//           }
+//       }
+//
+//}
