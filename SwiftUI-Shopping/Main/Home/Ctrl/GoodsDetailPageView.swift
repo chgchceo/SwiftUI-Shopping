@@ -11,6 +11,8 @@ import URLImage
 struct GoodsDetailPageView: View {
     
     
+    @State var showCartView = false
+    
     @Binding var showDetail2:Bool
 
      var goodsId:String = ""
@@ -123,7 +125,12 @@ struct GoodsDetailPageView: View {
                 .frame(width: ScreenWidth, height: ScreenHeight-NavigationBarHeight-BottomSafeHeight)
             }
             
-            BottomFixView(showDe: $showDetail2)
+            BottomFixView(showDe: $showDetail2, showCart: $showCartView)
+            
+            if showCartView {
+                
+                SwiftUIAlertView(detail: self.detail, showView: $showCartView)
+            }
         }
         .frame(width: ScreenWidth,height: ScreenHeight-NavigationBarHeight-BottomSafeHeight)
         
@@ -172,8 +179,10 @@ struct GoodsDetailPageView: View {
 struct BottomFixView:View {
     
     @Binding var showDe:Bool
+    @Binding var showCart:Bool
 
     @State private var isPresented = false
+    
     var body: some View{
         
         VStack{
@@ -204,7 +213,8 @@ struct BottomFixView:View {
                     Spacer()
                     Button(action: {
                         
-                        isPresented = true
+//                        isPresented = true
+                        showCart = true
                         
                     }, label: {
                         Text("加入购物车")

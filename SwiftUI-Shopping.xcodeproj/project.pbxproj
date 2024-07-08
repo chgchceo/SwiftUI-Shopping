@@ -34,6 +34,9 @@
 		14D3E9AD2C37BAFF0059393A /* GoodsDetailPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3E9AC2C37BAFF0059393A /* GoodsDetailPageModel.swift */; };
 		14D3E9AF2C37C5C10059393A /* GoodsDetailBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3E9AE2C37C5C10059393A /* GoodsDetailBannerView.swift */; };
 		14D3E9B12C37DC1B0059393A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3E9B02C37DC1B0059393A /* WebView.swift */; };
+		14DA80CD2C3B796B0077173D /* SwiftUIAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA80CC2C3B796B0077173D /* SwiftUIAlertView.swift */; };
+		14DA80CF2C3B7A060077173D /* UIAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA80CE2C3B7A060077173D /* UIAlertView.swift */; };
+		14DA80D12C3B7A0E0077173D /* UIAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DA80D02C3B7A0E0077173D /* UIAlertView.xib */; };
 		14DDE6CC2C36683300C37BC2 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DDE6CB2C36683300C37BC2 /* LoginPageView.swift */; };
 		14DDE6CE2C3684CC00C37BC2 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DDE6CD2C3684CC00C37BC2 /* ToastView.swift */; };
 		14E9AEFC2C3247E6008B872E /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 14E9AEFB2C3247E6008B872E /* ACarousel */; };
@@ -80,6 +83,9 @@
 		14D3E9AC2C37BAFF0059393A /* GoodsDetailPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailPageModel.swift; sourceTree = "<group>"; };
 		14D3E9AE2C37C5C10059393A /* GoodsDetailBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailBannerView.swift; sourceTree = "<group>"; };
 		14D3E9B02C37DC1B0059393A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		14DA80CC2C3B796B0077173D /* SwiftUIAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAlertView.swift; sourceTree = "<group>"; };
+		14DA80CE2C3B7A060077173D /* UIAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertView.swift; sourceTree = "<group>"; };
+		14DA80D02C3B7A0E0077173D /* UIAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIAlertView.xib; sourceTree = "<group>"; };
 		14DDE6CB2C36683300C37BC2 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
 		14DDE6CD2C3684CC00C37BC2 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		14E9AEFD2C324988008B872E /* TopSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSearchView.swift; sourceTree = "<group>"; };
@@ -239,6 +245,9 @@
 				14D3E9AE2C37C5C10059393A /* GoodsDetailBannerView.swift */,
 				14E9AEFD2C324988008B872E /* TopSearchView.swift */,
 				14D3E9B02C37DC1B0059393A /* WebView.swift */,
+				14DA80CC2C3B796B0077173D /* SwiftUIAlertView.swift */,
+				14DA80CE2C3B7A060077173D /* UIAlertView.swift */,
+				14DA80D02C3B7A0E0077173D /* UIAlertView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -428,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C580592C2D405A0012993F /* Preview Assets.xcassets in Resources */,
+				14DA80D12C3B7A0E0077173D /* UIAlertView.xib in Resources */,
 				8BA7994F2C2F9F87005EB744 /* Launch Screen.storyboard in Resources */,
 				14C580562C2D405A0012993F /* Assets.xcassets in Resources */,
 			);
@@ -501,6 +511,7 @@
 				14867C5C2C2E61AB0093472D /* TabBarController.swift in Sources */,
 				14867C692C2EA4B60093472D /* LNNetworkManager.swift in Sources */,
 				14867C6A2C2EA4B60093472D /* LNBaseRequest.swift in Sources */,
+				14DA80CD2C3B796B0077173D /* SwiftUIAlertView.swift in Sources */,
 				14C5805B2C2D405A0012993F /* Persistence.swift in Sources */,
 				14867C6E2C2EA4E60093472D /* HomeModel.swift in Sources */,
 				14C580542C2D40580012993F /* ContentView.swift in Sources */,
@@ -512,6 +523,7 @@
 				14C580522C2D40580012993F /* SwiftUI_ShoppingApp.swift in Sources */,
 				14867C6B2C2EA4B60093472D /* LNRequest.swift in Sources */,
 				14DDE6CC2C36683300C37BC2 /* LoginPageView.swift in Sources */,
+				14DA80CF2C3B7A060077173D /* UIAlertView.swift in Sources */,
 				8BB44A5C2C2FF6DA00B164AC /* GoodsListView.swift in Sources */,
 				8BB44A602C3004F300B164AC /* GoodsDetailPageView.swift in Sources */,
 				14C5805E2C2D405A0012993F /* SwiftUI_Shopping.xcdatamodeld in Sources */,

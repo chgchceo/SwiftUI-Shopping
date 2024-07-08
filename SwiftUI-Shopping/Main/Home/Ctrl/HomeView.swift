@@ -175,6 +175,8 @@ struct HomeView: View {
 
                     LoadingView()
                 }
+                
+                
 
             }
             .alert(isPresented: $showAlert) {
