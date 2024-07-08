@@ -35,7 +35,7 @@ struct CategoryView: View {
                     
                     TopSearchView()
                            
-                    NavigationLink(destination: SearchGoodsListView(categoryId: cagegoryId),isActive: $showDetail) {
+                    NavigationLink(destination: SearchGoodsListView(firstShowDetail: $showDetail, categoryId: cagegoryId),isActive: $showDetail) {
                         
                     }
                     HStack(spacing: 0){

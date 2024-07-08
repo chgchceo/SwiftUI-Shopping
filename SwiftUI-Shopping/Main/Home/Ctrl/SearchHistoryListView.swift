@@ -46,7 +46,7 @@ struct SearchHistoryListView: View {
                                .foregroundColor(.white)
 //                               .cornerRadius(5)
                            
-                           NavigationLink(destination: SearchGoodsListView(key: keyword), isActive: $goResultView) {
+                           NavigationLink(destination: SearchGoodsListView(firstShowDetail: $goResultView, key: keyword), isActive: $goResultView) {
                                
                                
                            }

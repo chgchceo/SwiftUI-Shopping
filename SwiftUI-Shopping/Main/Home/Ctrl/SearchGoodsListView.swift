@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SearchGoodsListView: View {
+    
+    //是否返回到第一页
+    @Binding var firstShowDetail:Bool
+    
     @State private var isLoading = false
     @State var page:Int = 1 //页数
     @State var isRefresh = false //下拉刷新
@@ -97,7 +101,7 @@ struct SearchGoodsListView: View {
                                             self.showDetail = true
                                 }
 
-                                NavigationLink(destination: GoodsDetailPageView(showDetail2: $showDetail, goodsId: self.goodsId),isActive: $showDetail){
+                                NavigationLink(destination: GoodsDetailPageView(firstShowDetail: $firstShowDetail,showDetail2: $showDetail, goodsId: self.goodsId),isActive: $showDetail){
                                     if #available(iOS 16.0, *) {
                                         EmptyView()
                                             .backgroundStyle(.red)

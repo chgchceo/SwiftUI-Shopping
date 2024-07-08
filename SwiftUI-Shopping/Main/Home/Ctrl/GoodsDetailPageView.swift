@@ -10,6 +10,8 @@ import URLImage
 
 struct GoodsDetailPageView: View {
     
+    //是否返回到第一页
+    @Binding var firstShowDetail:Bool
     
     @State var showCartView = false
     
@@ -125,7 +127,7 @@ struct GoodsDetailPageView: View {
                 .frame(width: ScreenWidth, height: ScreenHeight-NavigationBarHeight-BottomSafeHeight)
             }
             
-            BottomFixView(showDe: $showDetail2, showCart: $showCartView)
+            BottomFixView(showDe: $showDetail2, showCart: $showCartView, firstShowDetail: $firstShowDetail)
             
             if showCartView {
                 
@@ -180,6 +182,8 @@ struct BottomFixView:View {
     
     @Binding var showDe:Bool
     @Binding var showCart:Bool
+    //是否返回到第一页
+    @Binding var firstShowDetail:Bool
 
     @State private var isPresented = false
     
@@ -202,6 +206,7 @@ struct BottomFixView:View {
                     .onTapGesture {
                         
                         showDe = false
+                        firstShowDetail = false
                     }
                     .padding(.leading,8)
                     VStack{

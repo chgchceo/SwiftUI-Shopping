@@ -134,7 +134,7 @@ struct HomeView: View {
                                                 self.showDetail1 = true
                                     }
 
-                                    NavigationLink(destination: GoodsDetailPageView(showDetail2: $showDetail1, goodsId: self.goodsId),isActive: $showDetail1){
+                                    NavigationLink(destination: GoodsDetailPageView(firstShowDetail:$showDetail1,showDetail2: $showDetail1, goodsId: self.goodsId),isActive: $showDetail1){
                                         if #available(iOS 16.0, *) {
                                             EmptyView()
                                                 .backgroundStyle(.red)
